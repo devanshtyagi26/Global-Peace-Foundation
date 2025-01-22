@@ -1,0 +1,155 @@
+{
+  "navigation": {
+    "about": "概要",
+    "events": "イベント",
+    "resources": "リソース",
+    "contact": "お問い合わせ",
+    "More": "もっと",
+    "blog": {
+      "title": "ブログ",
+      "subtitle": "ニュース"
+    },
+    "youth": {
+      "title": "ユース",
+      "subtitle": "ユースプログラム"
+    }
+
+  },
+  "hero": {
+    "title": "インド太平洋の若者たちをエンパワーする",
+    "subtitle": "対話、文化交流、協力的な行動を通じて、地域の未来を形作る活気のあるコミュニティに参加しましょう。",
+    "joinButton": "今すぐ寄付",
+    "eventsButton": "今後のイベント",
+    "imageAlt": "若者の集まり"
+  },
+  "about": {
+    "mission": {
+      "title": "私たちのミッション",
+      "subtitle": "若いリーダーたちをエンパワーし、異文化理解を促進することで、つながりのある、平和で繁栄したインド太平洋地域を創造することを目指しています。",
+      "cultural": {
+        "title": "文化交流",
+        "description": "インド太平洋地域の多様な文化の理解と認識を促進します。"
+      },
+      "leadership": {
+        "title": "リーダーシップ開発",
+        "description": "ワークショップ、メンタリング、実践的な経験を通じて、次世代のリーダーを育成します。"
+      },
+      "cooperation": {
+        "title": "地域協力",
+        "description": "共通の課題と機会に取り組むためのネットワークとパートナーシップを構築します。"
+      }
+    },
+    "partners": {
+      "title": "パートナー",
+      "subtitle": "インド太平洋地域にポジティブな変化をもたらすために協力する主要組織",
+      "visitWebsite": "ウェブサイトを訪問",
+      "list": {
+        "asean": {
+          "name": "ASEANユース機構",
+          "description": "地域協力を通じてASEANの若者をエンパワーする"
+        },
+        "pacific": {
+          "name": "太平洋諸島フォーラム",
+          "description": "太平洋地域の統合と協力を推進"
+        },
+        "un": {
+          "name": "国連ユース",
+          "description": "国連イニシアチブへの若者の参加を支援"
+        },
+        "asia": {
+          "name": "アジア財団",
+          "description": "平和で繁栄するアジア太平洋を構築"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "コミュニティの声",
+      "list": {
+        "first": {
+          "quote": "インド太平洋ユースフォーラムは、若手リーダーをつなぎ、国境を越えた意味のある協力を促進する上で重要な役割を果たしています。",
+          "author": "サラ・チェン",
+          "role": "ユースアンバサダー、シンガポール"
+        },
+        "second": {
+          "quote": "IPYFのプログラムを通じて、リーダーシップスキルと地域の課題に対する深い理解を得ることができました。",
+          "author": "ジェームズ・クマール",
+          "role": "プログラム参加者、インド"
+        }
+      }
+    },
+    "impact": {
+      "title": "インパクトストーリー",
+      "list": {
+        "environmental": {
+          "title": "国境を越えた環境イニシアチブ",
+          "description": "南太平洋の海洋汚染に取り組む若者主導のプロジェクト",
+          "impact": "5トンの海洋プラスチックを除去し、継続的なクリーンアッププログラムを確立"
+        },
+        "peace": {
+          "title": "デジタル平和構築",
+          "description": "紛争影響地域の若者をつなぐオンラインプラットフォーム",
+          "impact": "15カ国から1000人以上の若手平和構築者をつなぐ"
+        }
+      }
+    },
+    "social": {
+      "title": "つながる",
+      "subtitle": "最新の取り組みをフォローし、成長するコミュニティに参加しましょう",
+      "updates": {
+        "title": "最新情報"
+      },
+      "share": {
+        "title": "ミッションを共有",
+        "subtitle": "インド太平洋地域の若者のエンパワーメントについて広めましょう"
+      },
+      "follow": {
+        "title": "フォローする",
+        "subtitle": "ソーシャルメディアコミュニティに参加",
+        "instagram": {
+            "name": "インスタグラム",
+            "handle": "@indo_pacific_youth"
+        },
+        "facebook": {
+            "name": "フェイスブック",
+            "handle": "Indo-Pacific Youth Forum"
+        },
+        "linkedin": {
+            "name": "リンクトイン",
+            "handle": "Indo-Pacific Youth Forum"
+        }
+
+      }
+    }
+  },
+  "events": {
+    "title": "イベント＆プログラム",
+    "subtitle": "インド太平洋地域の若者をエンパワーするための革新的なイベントにご参加ください",
+    "filters": {
+      "all": "すべてのイベント",
+      "upcoming": "今後のイベント",
+      "past": "過去のイベント"
+    },
+    "spotsLeft": "残り席数",
+    "pastEvent": "終了したイベント",
+    "capacity": "定員",
+    "participants": "名",
+    "registerNow": "今すぐ登録",
+    "list": {
+      "summit": {
+        "title": "ユースリーダーシップサミット2024",
+        "location": "シンガポール",
+        "description": "インド太平洋地域の若手リーダーが集まり、インスピレーション、ネットワーキング、スキル構築の機会を提供します。"
+      },
+      "workshop": {
+        "title": "文化交流ワークショップ",
+        "location": "東京、日本",
+        "description": "インタラクティブなワークショップを通じて、インド太平洋諸国のさまざまな文化伝統を体験し、共有します。"
+      },
+      "conference": {
+        "title": "地域平和会議",
+        "location": "バンコク、タイ",
+        "description": "平和イニシアチブと地域協力について議論する若者代表者の成功した集まり。"
+      }
+    }
+  }
+}

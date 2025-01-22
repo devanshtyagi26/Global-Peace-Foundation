@@ -1,0 +1,153 @@
+{
+  "navigation": {
+    "about": "About",
+    "events": "Events",
+    "resources": "Resources",
+    "contact": "Contact",
+    "More": "More",
+    "blog": {
+      "title" : "Blog",
+      "subtitle": "News"
+    },
+    "youth": {
+      "title": "Youth",
+      "subtitle": "Youth Programs"
+    }
+  },
+  "hero": {
+    "title": "Empowering Youth Across the Indo-Pacific",
+    "subtitle": "Join a vibrant community of young leaders shaping the future of our region through dialogue, cultural exchange, and collaborative action.",
+    "joinButton": "Donate Now",
+    "eventsButton": "Upcoming Events",
+    "imageAlt": "Youth gathering"
+  },
+  "about": {
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "We strive to create a connected, peaceful, and prosperous Indo-Pacific region by empowering young leaders and fostering cross-cultural understanding.",
+      "cultural": {
+        "title": "Cultural Exchange",
+        "description": "Promoting understanding and appreciation of diverse cultures across the Indo-Pacific region."
+      },
+      "leadership": {
+        "title": "Leadership Development",
+        "description": "Nurturing the next generation of leaders through workshops, mentoring, and hands-on experience."
+      },
+      "cooperation": {
+        "title": "Regional Cooperation",
+        "description": "Building networks and partnerships to address shared challenges and opportunities."
+      }
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "Working together with leading organizations to create positive change across the Indo-Pacific region",
+      "visitWebsite": "Visit Website",
+      "list": {
+        "asean": {
+          "name": "ASEAN Youth Organization",
+          "description": "Empowering ASEAN youth through regional cooperation"
+        },
+        "pacific": {
+          "name": "Pacific Islands Forum",
+          "description": "Promoting Pacific regional integration and cooperation"
+        },
+        "un": {
+          "name": "UN Youth",
+          "description": "Supporting youth engagement in UN initiatives"
+        },
+        "asia": {
+          "name": "Asia Foundation",
+          "description": "Building a peaceful and thriving Asia-Pacific"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Community Says",
+      "list": {
+        "first": {
+          "quote": "The Indo-Pacific Youth Forum has been instrumental in connecting young leaders and fostering meaningful collaboration across borders.",
+          "author": "Sarah Chen",
+          "role": "Youth Ambassador, Singapore"
+        },
+        "second": {
+          "quote": "Through IPYF's programs, I've gained valuable leadership skills and a deeper understanding of regional challenges.",
+          "author": "James Kumar",
+          "role": "Program Participant, India"
+        }
+      }
+    },
+    "impact": {
+      "title": "Impact Stories",
+      "list": {
+        "environmental": {
+          "title": "Cross-Border Environmental Initiative",
+          "description": "Youth-led project addressing marine pollution in the South Pacific",
+          "impact": "Removed 5 tons of ocean plastic and established ongoing cleanup programs"
+        },
+        "peace": {
+          "title": "Digital Peace Building",
+          "description": "Online platform connecting youth from conflict-affected regions",
+          "impact": "Connected 1000+ young peacebuilders across 15 countries"
+        }
+      }
+    },
+    "social": {
+      "title": "Connect With Us",
+      "subtitle": "Stay updated with our latest initiatives and join our growing community",
+      "updates": {
+        "title": "Latest Updates"
+      },
+      "share": {
+        "title": "Share Our Mission",
+        "subtitle": "Help us spread the word about youth empowerment in the Indo-Pacific region"
+      },
+      "follow": {
+        "title": "Follow Us",
+        "subtitle": "Join our social media community",
+        "instagram": {
+          "name": "Instagram",
+          "handle": "@indo_pacific_youth"
+        },
+        "facebook": {
+          "name": "Facebook",
+          "handle": "Indo-Pacific Youth Forum"
+        },
+        "linkedin": {
+          "name": "LinkedIn",
+          "handle": "Indo-Pacific Youth Forum"
+        }
+      }
+    }
+  },
+  "events": {
+    "title": "Events & Programs",
+    "subtitle": "Join our transformative events designed to empower youth across the Indo-Pacific region",
+    "filters": {
+      "all": "All Events",
+      "upcoming": "Upcoming Events",
+      "past": "Past Events"
+    },
+    "spotsLeft": "spots left",
+    "pastEvent": "Past Event",
+    "capacity": "Capacity",
+    "participants": "participants",
+    "registerNow": "Register Now",
+    "list": {
+      "summit": {
+        "title": "Youth Leadership Summit 2024",
+        "location": "Singapore",
+        "description": "Join young leaders from across the Indo-Pacific region for a day of inspiration, networking, and skill-building."
+      },
+      "workshop": {
+        "title": "Cultural Exchange Workshop",
+        "location": "Tokyo, Japan",
+        "description": "Experience and share cultural traditions from different Indo-Pacific nations through interactive workshops."
+      },
+      "conference": {
+        "title": "Regional Peace Conference",
+        "location": "Bangkok, Thailand",
+        "description": "A successful gathering of youth representatives discussing peace initiatives and regional cooperation."
+      }
+    }
+  }
+}
