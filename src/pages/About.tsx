@@ -394,7 +394,11 @@ const About = () => {
   );
 };
 
-const Payment = ({ setqr }: { setqr: object }) => {
+const Payment = ({
+  setqr,
+}: {
+  setqr: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   useEffect(() => {
     document.querySelector("body")?.classList.add("overflow-hidden");
     return () =>
