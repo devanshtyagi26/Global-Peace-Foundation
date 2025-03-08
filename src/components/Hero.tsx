@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -12,13 +11,6 @@ const Hero = () => {
         />
       </div>
       <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-          Empowering Youth Across the Indo-Pacific
-        </h1>
-        <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-          Join a vibrant community of young leaders shaping the future of our region through dialogue,
-          cultural exchange, and collaborative action.
-        </p>
         <div className="mt-10 flex space-x-4">
           <a
             href="#join"

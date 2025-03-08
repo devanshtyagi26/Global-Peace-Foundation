@@ -6,7 +6,7 @@
     "contact": "Contact",
     "More": "More",
     "blog": {
-      "title" : "Blog",
+      "title": "Blog",
       "subtitle": "News"
     },
     "youth": {
@@ -15,8 +15,6 @@
     }
   },
   "hero": {
-    "title": "Empowering Youth Across the Indo-Pacific",
-    "subtitle": "Join a vibrant community of young leaders shaping the future of our region through dialogue, cultural exchange, and collaborative action.",
     "joinButton": "Donate Now",
     "eventsButton": "Upcoming Events",
     "imageAlt": "Youth gathering"
