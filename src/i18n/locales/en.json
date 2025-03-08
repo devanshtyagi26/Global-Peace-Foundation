@@ -20,20 +20,24 @@
     "imageAlt": "Youth gathering"
   },
   "about": {
+    "AboutUs": {
+      "title": "About Us",
+      "subtitle": "Indo-Pacific Peace Forum provides a platform, where a group of organizations, institutions, stakeholders, and experts can exchange ideas and discuss issues, to promote peace and stability across the Indo-Pacific. The Indo-Pacific region is an expansive stretch from the eastern coast of Africa to the western shores of the Americas. The Indo-Pacific region is home to over 50% of the world's population and accounts for 60% of global GDP. The Indo-Pacific region faces complex security challenges, including territorial disputes, terrorism, cybersecurity threats, and great power rivalries. The Indo-Pacific is a critical hub for global trade and commerce, with many countries relying on sea routes for economic survival. The region's stability is crucial for global peace and prosperity. \n\n The Indo-Pacific region is home to diverse cultures, religions, and nations, making it an ideal testing ground for this philosophy. By embracing “The World is One Family Under God”, countries in the Indo-Pacific region can work together to build a more peaceful, prosperous, and harmonious community."
+    },
+    "Vision": {
+      "title": "Vision",
+      "subtitle": " To cultivate a thriving Indo-Pacific region, where dialogue replaces discord, collaboration, prosperity conquers conflict, and shared flourishes under the banner of enduring peace.\nThe Indo-Pacific Peace Forum envisions a thriving region where: Dialogue replaces discord, fostering harmony and mutual understanding. Collaboration conquers challenges, achieving shared goals for all. Enduring peace paves the way for prosperity, ensuring a vibrant economic future."
+    },
     "mission": {
       "title": "Our Mission",
-      "subtitle": "We strive to create a connected, peaceful, and prosperous Indo-Pacific region by empowering young leaders and fostering cross-cultural understanding.",
+      "subtitle": "The Indo-Pacific Peace Forum champions a peaceful, secure and prosperous future for the region We achieve this by: \n Fostering dialogue and collaboration, We bring diverse stakeholders together to address critical issues, Building trust and understanding, We promote dialogue, cultural exchange, and capacity building, Championing a rules-based order, We advocate for respect for international law, sovereignty, and peaceful dispute resolution, Empowering regional leadership We support regional ownership and solutions.\nPromoting a sustainable future: We foster cooperation on emerging threats and advocate for inclusive development.",
       "cultural": {
         "title": "Cultural Exchange",
-        "description": "Promoting understanding and appreciation of diverse cultures across the Indo-Pacific region."
+        "description": "On September 27, 2024, the Indo-Pacific Peace Forum was inaugurated at Antar-Rashtriya Sahyog Parishad, New Delhi, bringing together diplomats and subject matter experts for high-level discussions."
       },
       "leadership": {
         "title": "Leadership Development",
-        "description": "Nurturing the next generation of leaders through workshops, mentoring, and hands-on experience."
-      },
-      "cooperation": {
-        "title": "Regional Cooperation",
-        "description": "Building networks and partnerships to address shared challenges and opportunities."
+        "description": "On February 11, 2025, a preparatory meeting with prominent diplomats was held at the India International Centre to strategize for the upcoming session of the forum."
       }
     },
     "partners": {

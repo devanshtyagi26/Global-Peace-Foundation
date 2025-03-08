@@ -112,6 +112,46 @@ const About = () => {
         </div>
       </div>
 
+      {/* About Us Section */}
+      <section id="aboutUs" className="py-16 bg-white">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              {t("about.AboutUs.title")}
+            </h2>
+            <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+              {t("about.AboutUs.subtitle")
+                .split("\n")
+                .map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Vision Section */}
+      <section id="vision" className="py-16 bg-white">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              {t("about.Vision.title")}
+            </h2>
+            <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+              {t("about.Vision.subtitle")
+                .split("\n")
+                .map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+            </p>
+          </div>
+        </div>
+      </section>
       {/* Mission Section */}
       <section id="mission" className="py-16 bg-white">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -120,7 +160,14 @@ const About = () => {
               {t("about.mission.title")}
             </h2>
             <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-              {t("about.mission.subtitle")}
+              {t("about.mission.subtitle")
+                .split("\n")
+                .map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
             </p>
           </div>
 
@@ -142,14 +189,7 @@ const About = () => {
                   {t("about.mission.leadership.description")}
                 </p>
               </div>
-              <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="text-lg font-medium text-gray-900">
-                  {t("about.mission.cooperation.title")}
-                </h3>
-                <p className="mt-2 text-gray-600">
-                  {t("about.mission.cooperation.description")}
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
