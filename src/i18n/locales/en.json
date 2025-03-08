@@ -2,6 +2,7 @@
   "navigation": {
     "about": "About",
     "events": "Events",
+    "blueEconomy": "Blue Economy",
     "resources": "Resources",
     "contact": "Contact",
     "More": "More",
@@ -150,6 +151,31 @@
         "location": "Bangkok, Thailand",
         "description": "A successful gathering of youth representatives discussing peace initiatives and regional cooperation."
       }
+    }
+  },
+  "blueEconomy": {
+    "title": "Blue Economy",
+    "subtitle": "India Blue Economy refers to an economic paradigm that prioritizes the preservation and regeneration of the marine environment while simultaneously fostering sustainable human growth and development. \nBlue economy is the sustainable use of ocean resources for economic growth and improved livelihoods. The overall contribution of the ocean to the economies, the need to address environmental and ecological sustainability.\nThus, the ocean economy is a growth opportunity for both developed and developing countries. The blue economy is intrinsically linked to the sustainable development goal(SDGs)14 labelled as life below water which concerns the conservation and sustainable use of water resources. The UN has declared the decade 2021-2030 as the decade of “ocean science for sustainable development”.",
+    "pillars": {
+      "title": "Three pillars of the blue economy",
+      "types": {
+        "economic": {
+          "title": "Economic pillar : ",
+          "subtitle": "Navigating prosperity It revolves around harnessing the vast economic potential of our oceans and coastal areas while ensuring responsible resource management.\n"
+        },
+        "social": {
+          "title": "Social pillar : ",
+          "subtitle": "Empowering communities It emphasizes the importance of social equity and community well being within the blue economy framework."
+        },
+        "environmental": {
+          "title": "Environmental pillar : ",
+          "subtitle": "protecting our oceans The environmental pillar places paramount importance on safeguarding the health and resilience of our oceans and ecosystems."
+        }
+      }
+    },
+    "movement": {
+      "title": "BLUE ECONOMY MOVEMENT",
+      "subtitle": "The Blue Economy is a holistic approach that promotes economic growth while ensuring environmental sustainability, social inclusion, and prosperity. By aligning with the Sustainable Development Goals (SDGs), it focuses on the responsible management of oceans and marine resources for a better future. Embracing the Blue Economy is crucial for achieving global sustainability, fostering growth, protecting the environment, and building a resilient future for all."
     }
   }
 }
