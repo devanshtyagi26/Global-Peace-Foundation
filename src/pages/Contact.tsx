@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Globe, AlertCircle } from 'lucide-react';
+import MessageEmail from "../emails/MessageEmail";
+import { renderToString } from "react-dom/server";
 
 interface FormData {
   name: string;
@@ -32,23 +34,48 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setSubmitStatus('success');
+      // Convert the React component to an HTML string
+      const emailHtml = renderToString(
+        <MessageEmail
+          name={formData.name}
+          email={formData.email}
+          organization={formData.organization}
+          subject={formData.subject}
+          body={formData.message}
+        />
+      );
+
+      // Send the email request
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: import.meta.env.VITE_RECEIVER_MAIL,
+          subject: "Message from GPF Website",
+          html: emailHtml,
+        }),
+      });
+
+      const result = await response.json();
+      console.log(result);
+
+      // Handle submission success
+      setSubmitStatus("success");
       setFormData({
-        name: '',
-        email: '',
-        organization: '',
-        subject: '',
-        message: ''
+        name: "",
+        email: "",
+        organization: "",
+        subject: "",
+        message: "",
       });
     } catch (error) {
-      setSubmitStatus('error');
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
-      setTimeout(() => setSubmitStatus('idle'), 3000);
+      setTimeout(() => setSubmitStatus("idle"), 3000);
     }
   };
 
