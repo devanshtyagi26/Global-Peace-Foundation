@@ -88,23 +88,23 @@ const About = () => {
       <div className="relative bg-indigo-900">
         <div className="absolute inset-0">
           <img
-            className="object-cover w-full h-full"
+            className="object-cover max-md:object-contain w-full h-full"
             src={Banner}
             alt={t("hero.imageAlt")}
           />
         </div>
-        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8 sm:pt-[13rem] sm:pb-[2rem]">
-          <div className="flex mt-10 space-x-4">
+        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8 sm:pt-[13rem] sm:pb-[2rem] max-md:pt-[0.1rem] max-md:pb-16">
+          <div className="flex mt-10 space-x-4 relative max-md:-bottom-12">
             <button
               onClick={() => setqr(true)}
-              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#7cbac9] border border-transparent rounded-md hover:bg-yellow-700"
+              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#7cbac9] border border-transparent rounded-md max-md:text-[0.7rem] max-md:px-2 max-md:pt-0 max-md:pb-0 max-md:leading-[1.5rem] hover:bg-[#ABCFD8]"
             >
               {t("hero.joinButton")}
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
             <a
               href="/events"
-              className="inline-flex items-center px-6 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-gray-50"
+              className="inline-flex items-center px-6 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md max-md:text-[0.7rem] max-md:px-2 max-md:pt-0 max-md:pb-0 max-md:leading-[1.5rem] hover:bg-gray-50"
             >
               {t("hero.eventsButton")}
             </a>
@@ -189,7 +189,6 @@ const About = () => {
                   {t("about.mission.leadership.description")}
                 </p>
               </div>
-              
             </div>
           </div>
         </div>
