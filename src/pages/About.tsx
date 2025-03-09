@@ -12,7 +12,7 @@ import {
   TwitterShareButton,
   LinkedinShareButton,
   FacebookIcon,
-  TwitterIcon,
+  XIcon,
   LinkedinIcon,
 } from "react-share";
 
@@ -115,10 +115,10 @@ const About = () => {
       </div>
 
       {/* About Us Section */}
-      <section id="aboutUs" className="py-16 bg-white">
+      <section id="aboutUs" className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[1.75rem]">
               {t("about.AboutUs.title")}
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
@@ -135,10 +135,10 @@ const About = () => {
         </div>
       </section>
       {/* Vision Section */}
-      <section id="vision" className="py-16 bg-white">
+      <section id="vision" className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[1.75rem]">
               {t("about.Vision.title")}
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
@@ -155,10 +155,10 @@ const About = () => {
         </div>
       </section>
       {/* Mission Section */}
-      <section id="mission" className="py-16 bg-white">
+      <section id="mission" className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[1.75rem]">
               {t("about.mission.title")}
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
@@ -174,18 +174,18 @@ const About = () => {
           </div>
 
           <div className="mt-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg sm:leading-[4.5rem] leading-[4.5rem]">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[3.75rem] sm:leading-[4.5rem] leading-[4.5rem]">
               {t("about.mission.impactStories.title")}
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-[1.5rem]">
               <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
-                <img src={first_story} />
+                <img src={first_story} className="object-cover w-full h-48" />
                 <p className="mt-2 text-justify text-lg text-gray-600">
                   {t("about.mission.impactStories.first.description")}
                 </p>
               </div>
-              <div className="p-6 rounded-lg bg-[#e8f5f9] w-[28rem] sm:w-[22rem]">
-                <img src={second_story} />
+              <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
+                <img src={second_story} className="object-cover w-full h-48" />
                 <p className="mt-2 text-justify text-lg text-gray-600">
                   {t("about.mission.impactStories.second.description")}
                 </p>
@@ -196,7 +196,7 @@ const About = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <h2 className="mb-12 text-3xl font-extrabold text-center text-gray-900">
             {t("about.testimonials.title")}
@@ -224,38 +224,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
-          <h2 className="mb-12 text-3xl font-extrabold text-center text-gray-900">
-            {t("about.impact.title")}
-          </h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {caseStudies.map((study, index) => (
-              <div
-                key={index}
-                className="overflow-hidden bg-white rounded-lg shadow-sm"
-              >
-                <img
-                  src={study.image}
-                  alt={study.title}
-                  className="object-cover w-full h-48"
-                />
-                <div className="p-6">
-                  <h3 className="mb-2 text-xl font-semibold text-gray-900">
-                    {study.title}
-                  </h3>
-                  <p className="mb-4 text-gray-600">{study.description}</p>
-                  <div className="p-4 text-green-700 rounded-lg bg-green-50">
-                    <strong>Impact:</strong> {study.impact}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Social Media Section */}
       <section className="py-20 bg-gradient-to-b from-white to-indigo-50">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
@@ -276,7 +244,7 @@ const About = () => {
               </h3>
               <div className="overflow-hidden rounded-lg shadow-lg instagram-feed-container">
                 <InstagramEmbed
-                  url="https://www.instagram.com/p/C70QfwOSKe9/?img_index=1"
+                  url="https://www.instagram.com/ippf_gpfindia?igsh=OW45a2VqcGtneDZu"
                   width={500}
                 />
               </div>
@@ -301,7 +269,7 @@ const About = () => {
 
                   <TwitterShareButton url={shareUrl} title={title}>
                     <div className="p-3 transition-colors duration-300 rounded-full hover:bg-blue-50">
-                      <TwitterIcon size={48} round />
+                      <XIcon size={48} round />
                     </div>
                   </TwitterShareButton>
 
@@ -323,7 +291,7 @@ const About = () => {
                 </p>
                 <div className="space-y-4">
                   <a
-                    href="https://instagram.com/your-handle"
+                    href="https://www.instagram.com/ippf_gpfindia?igsh=OW45a2VqcGtneDZu"
                     className="flex items-center p-4 transition-colors duration-300 rounded-lg hover:bg-gray-50"
                   >
                     <img
@@ -341,29 +309,29 @@ const About = () => {
                     </div>
                   </a>
                   <a
-                    href="https://facebook.com/your-page"
+                    href="https://x.com/ippf_gpfindia?s=09"
                     className="flex items-center p-4 transition-colors duration-300 rounded-lg hover:bg-gray-50"
                   >
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png"
-                      alt={t("about.social.follow.facebook.name")}
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/225px-X_icon.svg.png"
+                      alt={t("about.social.follow.twitter.name")}
                       className="w-8 h-8 mr-4"
                     />
                     <div>
                       <p className="font-medium text-gray-900">
-                        {t("about.social.follow.facebook.name")}
+                        {t("about.social.follow.twitter.name")}
                       </p>
                       <p className="text-sm text-gray-500">
-                        {t("about.social.follow.facebook.handle")}
+                        {t("about.social.follow.twitter.handle")}
                       </p>
                     </div>
                   </a>
                   <a
-                    href="https://linkedin.com/company/your-company"
+                    href="https://www.linkedin.com/company/indo-pacific-peace-forum/"
                     className="flex items-center p-4 transition-colors duration-300 rounded-lg hover:bg-gray-50"
                   >
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/108px-LinkedIn_icon.svg.png"
                       alt={t("about.social.follow.linkedin.name")}
                       className="w-8 h-8 mr-4"
                     />

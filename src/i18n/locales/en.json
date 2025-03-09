@@ -59,21 +59,7 @@
         }
       }
     },
-    "impact": {
-      "title": "Impact Stories",
-      "list": {
-        "environmental": {
-          "title": "Cross-Border Environmental Initiative",
-          "description": "Youth-led project addressing marine pollution in the South Pacific",
-          "impact": "Removed 5 tons of ocean plastic and established ongoing cleanup programs"
-        },
-        "peace": {
-          "title": "Digital Peace Building",
-          "description": "Online platform connecting youth from conflict-affected regions",
-          "impact": "Connected 1000+ young peacebuilders across 15 countries"
-        }
-      }
-    },
+
     "social": {
       "title": "Connect With Us",
       "subtitle": "Stay updated with our latest initiatives and join our growing community",
@@ -89,15 +75,12 @@
         "subtitle": "Join our social media community",
         "instagram": {
           "name": "Instagram",
-          "handle": "@indo_pacific_youth"
+          "handle": "@ippf_gpfindia"
         },
-        "facebook": {
-          "name": "Facebook",
-          "handle": "Indo-Pacific Youth Forum"
-        },
+        "twitter": {"name": "X", "handle": "@ippf_gpfindia"},
         "linkedin": {
           "name": "LinkedIn",
-          "handle": "Indo-Pacific Youth Forum"
+          "handle": "Indo Pacific Peace Forum"
         }
       }
     }
