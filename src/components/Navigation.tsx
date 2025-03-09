@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Logo from "../assets/IPPF Logo.jpg";
+import Logo from "/IPPF Logo.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);

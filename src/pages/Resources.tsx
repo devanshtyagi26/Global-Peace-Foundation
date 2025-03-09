@@ -17,7 +17,7 @@ const RESOURCES = [
     date: "2025-02",
     description:
       "Press Note: A proprietary meeting conducted with various diplomats for planning and execution of the upcoming episode of the forum.",
-    downloadUrl: "../assets/PDF/Press Notes February 11, 2025 - Report.pdf",
+    downloadUrl: "/PDF/Press Notes February 11, 2025 - Report.pdf",
     fileSize: "51 KB",
     format: "PDF",
   },
@@ -28,7 +28,7 @@ const RESOURCES = [
     date: "2024",
     description:
       "A comprehensive analysis of Indo-Pacific security, highlighting geopolitical challenges, maritime security, climate resilience, and regional cooperation.",
-    downloadUrl: "../assets/PDF/Peace and Security - Book.pdf",
+    downloadUrl: "/PDF/Peace and Security - Book.pdf",
     fileSize: "11.8 MB",
     format: "PDF",
   },
@@ -40,7 +40,7 @@ const RESOURCES = [
     description:
       "A round table Workshop on Peace and Security in the Indo-Pacific Region: Charting a Path Toward Stability",
     downloadUrl:
-      "../assets/PDF/Launch of Indo Pacific Peace Forum - Article.pdf",
+      "/PDF/Launch of Indo Pacific Peace Forum - Article.pdf",
     fileSize: "97 KB",
     format: "PDF",
   },

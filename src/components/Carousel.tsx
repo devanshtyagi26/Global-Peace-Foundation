@@ -1,11 +1,10 @@
-import one from "../assets/Carousel/one.jpg";
-import two from "../assets/Carousel/two.jpg";
-import three from "../assets/Carousel/three.jpg";
+import one from "/Carousel/one.jpg";
+import two from "/Carousel/two.jpg";
+import three from "/Carousel/three.jpg";
 
 export const Carousel = () => {
   return (
     <>
-      <img src={one} className="w-full h-full object-cover" alt="Slide 1" />
       <div
         data-hs-carousel='{
     "loadingClasses": "opacity-0",

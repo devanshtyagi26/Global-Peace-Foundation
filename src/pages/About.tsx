@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { InstagramEmbed } from "react-social-media-embed";
-import QR from "../assets/qr.jpg";
-import Banner from "../assets/Picture1.jpg";
-import first_story from "../assets/Impact Stories/first.jpg";
-import second_story from "../assets/Impact Stories/second.jpg";
+import QR from "/qr.jpg";
+import Banner from "/Picture1.jpg";
+import first_story from "/Impact Stories/first.jpg";
+import second_story from "/Impact Stories/second.jpg";
 import {
   FacebookShareButton,
   TwitterShareButton,
