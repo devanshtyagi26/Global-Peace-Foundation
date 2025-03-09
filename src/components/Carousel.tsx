@@ -6,11 +6,6 @@ export const Carousel = () => {
   return (
     <>
       <img src={one} className="w-full h-full object-cover" alt="Slide 1" />
-      <img
-        src="../assets/Carousel/one.jpg"
-        className="w-full h-full object-cover"
-        alt="Slide 1"
-      />
       <div
         data-hs-carousel='{
     "loadingClasses": "opacity-0",
@@ -21,32 +16,26 @@ export const Carousel = () => {
       >
         <div className="hs-carousel relative overflow-hidden w-full h-[35rem] min-h-96 bg-white rounded-lg ">
           <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-            <div className="hs-carousel-slide h-full w-full">
-              <div className="flex justify-center items-center w-full h-full bg-gray-100">
-                <img
-                  src={one}
-                  className="w-full h-full object-cover"
-                  alt="Slide 1"
-                />
-              </div>
+            <div className="hs-carousel-slide h-full w-full flex justify-center items-center w-full h-full bg-gray-100">
+              <img
+                src={one}
+                className="w-full h-full object-cover"
+                alt="Slide 1"
+              />
             </div>
-            <div className="hs-carousel-slide h-full w-full">
-              <div className="flex justify-center items-center w-full h-full bg-gray-200">
-                <img
-                  src={three}
-                  className="w-full h-full object-cover"
-                  alt="Slide 2"
-                />
-              </div>
+            <div className="hs-carousel-slide h-full w-full flex justify-center items-center w-full h-full bg-gray-200">
+              <img
+                src={three}
+                className="w-full h-full object-cover"
+                alt="Slide 2"
+              />
             </div>
-            <div className="hs-carousel-slide h-full w-full">
-              <div className="flex justify-center items-center w-full h-full bg-gray-300">
-                <img
-                  src={two}
-                  className="w-full h-full object-cover"
-                  alt="Slide 3"
-                />
-              </div>
+            <div className="hs-carousel-slide h-full w-full flex justify-center items-center w-full h-full bg-gray-300">
+              <img
+                src={two}
+                className="w-full h-full object-cover"
+                alt="Slide 3"
+              />
             </div>
           </div>
         </div>
