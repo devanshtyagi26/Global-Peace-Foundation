@@ -17,21 +17,21 @@ export const Carousel = () => {
           <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
             <div className="hs-carousel-slide h-full w-full flex justify-center items-center w-full h-full bg-gray-100">
               <img
-                src={one}
+                src={import.meta.env.BASE_URL + "Carousel/one.jpg"}
                 className="w-full h-full object-cover"
                 alt="Slide 1"
               />
             </div>
             <div className="hs-carousel-slide h-full w-full flex justify-center items-center w-full h-full bg-gray-200">
               <img
-                src={three}
+                src={import.meta.env.BASE_URL + "Carousel/three.jpg"}
                 className="w-full h-full object-cover"
                 alt="Slide 2"
               />
             </div>
             <div className="hs-carousel-slide h-full w-full flex justify-center items-center w-full h-full bg-gray-300">
               <img
-                src={two}
+                src={import.meta.env.BASE_URL + "Carousel/two.jpg"}
                 className="w-full h-full object-cover"
                 alt="Slide 3"
               />
