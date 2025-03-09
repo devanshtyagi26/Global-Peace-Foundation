@@ -1,25 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { 
-  Globe, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin, 
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import {
+  Globe,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
   ArrowUpCircle,
-  Heart 
-} from 'lucide-react';
+  Heart,
+} from "lucide-react";
 
 const Footer = () => {
   const { t } = useTranslation();
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const location = useLocation();
+
+  // Scroll to top when navigating
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <footer className="relative text-white bg-gradient-to-b from-gray-900 to-indigo-900">
@@ -39,35 +46,65 @@ const Footer = () => {
           <div className="space-y-4 animate-fade-slide-up">
             <h3 className="text-xl font-bold">About Us</h3>
             <p className="text-sm leading-relaxed text-gray-300">
-              The Indo-Pacific Youth Forum is a platform that empowers young minds to connect, collaborate, and create solutions for a better tomorrow. We focus on leadership, innovation, and global challenges.
+              The Indo-Pacific Youth Forum is a platform that empowers young
+              minds to connect, collaborate, and create solutions for a better
+              tomorrow. We focus on leadership, innovation, and global
+              challenges.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110" aria-label="Facebook">
+              <a
+                href="https://facebook.com"
+                className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com" className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110" aria-label="Twitter">
+              <a
+                href="https://twitter.com"
+                className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
+                aria-label="Twitter"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com" className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110" aria-label="Instagram">
+              <a
+                href="https://instagram.com"
+                className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110" aria-label="LinkedIn">
+              <a
+                href="https://linkedin.com"
+                className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4 animate-fade-slide-up" style={{ animationDelay: '150ms' }}>
+          <div
+            className="space-y-4 animate-fade-slide-up"
+            style={{ animationDelay: "150ms" }}
+          >
             <h3 className="text-xl font-bold">Quick Links</h3>
             <ul className="space-y-2">
-              {['About Us', 'Events', 'Resources', 'Blog', 'Contact Us'].map((item, index) => (
+              {[
+                { name: "About Us", path: "/" },
+                { name: "Events", path: "/events" },
+                { name: "Blue Economy", path: "/blueEconomy" },
+                { name: "Diaspora", path: "/diaspora" },
+                { name: "Resources", path: "/resources" },
+                { name: "Blog", path: "/blog" },
+                { name: "Contact Us", path: "/contact" },
+              ].map((item, index) => (
                 <li key={index}>
-                  <Link 
-                    to={`/${item.replace(/\s+/g, '-').toLowerCase()}`}
+                  <Link
+                    to={item.path}
                     className="inline-block text-gray-300 transition-colors duration-300 transform hover:text-white hover:translate-x-2"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -75,7 +112,10 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4 animate-fade-slide-up" style={{ animationDelay: '300ms' }}>
+          <div
+            className="space-y-4 animate-fade-slide-up"
+            style={{ animationDelay: "300ms" }}
+          >
             <h3 className="text-xl font-bold">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3 group">
@@ -106,10 +146,14 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-4 animate-fade-slide-up" style={{ animationDelay: '450ms' }}>
+          <div
+            className="space-y-4 animate-fade-slide-up"
+            style={{ animationDelay: "450ms" }}
+          >
             <h3 className="text-xl font-bold">Newsletter</h3>
             <p className="text-sm text-gray-300">
-              Stay updated with the latest events, resources, and opportunities. Subscribe to our newsletter.
+              Stay updated with the latest events, resources, and opportunities.
+              Subscribe to our newsletter.
             </p>
             <form className="space-y-3">
               <input
@@ -131,13 +175,20 @@ const Footer = () => {
         <div className="pt-8 mt-8 border-t border-gray-800">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Indo-Pacific Youth Forum. All rights reserved.
+              © {new Date().getFullYear()} Indo-Pacific Youth Forum. All rights
+              reserved.
             </p>
             <div className="flex items-center space-x-4 text-sm text-gray-400">
-              <Link to="/privacy-policy" className="transition-colors duration-300 hover:text-white">
+              <Link
+                to="/privacy-policy"
+                className="transition-colors duration-300 hover:text-white"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms-conditions" className="transition-colors duration-300 hover:text-white">
+              <Link
+                to="/terms-conditions"
+                className="transition-colors duration-300 hover:text-white"
+              >
                 Terms & Conditions
               </Link>
               <span className="flex items-center space-x-1">
