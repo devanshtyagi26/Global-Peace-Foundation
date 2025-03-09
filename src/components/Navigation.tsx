@@ -61,15 +61,18 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed z-50 w-full bg-indigo-600">
+    <nav className="fixed z-50 w-full bg-white shadow-[0_4px_17px_0_rgba(0,0,0,0.2)]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link
               to="/"
-              className="text-xl font-bold text-white flex items-center gap-4"
+              className="text-xl font-bold text-black flex items-center gap-4"
             >
-              <img src={Logo} className="w-5.5 h-[3.2rem] rounded-[40px]"></img>
+              <img
+                src={Logo}
+                className="w-5.5 h-[3.2rem] rounded-[40px] "
+              ></img>
               Indo-Pacific Peace Forum
             </Link>
           </div>
@@ -82,8 +85,8 @@ const Navigation = () => {
                   to={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive(item.href)
-                      ? "bg-indigo-700 text-white"
-                      : "text-white hover:bg-indigo-500"
+                      ? "bg-[#033558] text-white"
+                      : "text-black hover:bg-[#033558]"
                   }`}
                 >
                   {item.label}
@@ -93,10 +96,10 @@ const Navigation = () => {
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setIsMoreOpen(!isMoreOpen)}
-                  className={`text-white hover:bg-indigo-500 px-3 py-2 rounded-md text-sm font-medium inline-flex items-center transition-colors duration-200 ${
+                  className={`text-black hover:bg-[#033558] px-3 py-2 rounded-md text-sm font-medium inline-flex items-center transition-colors duration-200 ${
                     isMoreOpen ||
                     moreMenuItems.some((item) => isActive(item.href))
-                      ? "bg-indigo-700"
+                      ? "bg-[#033558]"
                       : ""
                   }`}
                 >
@@ -148,7 +151,7 @@ const Navigation = () => {
 
               <button
                 onClick={toggleLanguage}
-                className="flex items-center px-3 py-2 text-sm font-medium text-white transition-colors duration-200 rounded-md hover:bg-indigo-500"
+                className="flex items-center px-3 py-2 text-sm font-medium text-black transition-colors duration-200 rounded-md hover:bg-[#033558]"
               >
                 <Globe className="w-4 h-4 mr-1" />
                 {languages[currentLanguage as keyof typeof languages]}
@@ -159,7 +162,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-white transition-colors duration-200 rounded-md hover:bg-indigo-500"
+              className="p-2 text-black transition-colors duration-200 rounded-md hover:bg-[#033558]"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -172,18 +175,18 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`md:hidden fixed inset-0 bg-indigo-600 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed inset-0 bg-white transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="px-4 pt-4 pb-3">
           <div className="flex items-center justify-between">
-            <h1 className="text-xl font-bold text-white">
+            <h1 className="text-xl font-bold text-black">
               Indo-Pacific Peace Forum
             </h1>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 text-white rounded-md hover:bg-indigo-500"
+              className="p-2 text-black rounded-md hover:bg-[#033558]"
             >
               <X className="w-6 h-6" />
             </button>
@@ -195,8 +198,8 @@ const Navigation = () => {
                 to={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActive(item.href)
-                    ? "bg-indigo-700 text-white"
-                    : "text-white hover:bg-indigo-500"
+                    ? "bg-[#033558] text-white"
+                    : "text-black hover:bg-[#033558]"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -209,8 +212,8 @@ const Navigation = () => {
                 to={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActive(item.href)
-                    ? "bg-indigo-700 text-white"
-                    : "text-white hover:bg-indigo-500"
+                    ? "bg-[#033558] text-white"
+                    : "text-black hover:bg-[#033558]"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -219,7 +222,7 @@ const Navigation = () => {
             ))}
             <button
               onClick={toggleLanguage}
-              className="flex items-center w-full px-3 py-2 text-base font-medium text-left text-white transition-colors duration-200 rounded-md hover:bg-indigo-500"
+              className="flex items-center w-full px-3 py-2 text-base font-medium text-left text-black transition-colors duration-200 rounded-md hover:bg-[#033558] hover:text-white"
             >
               <Globe className="w-5 h-5 mr-2" />
               {languages[currentLanguage as keyof typeof languages]}
