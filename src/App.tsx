@@ -11,9 +11,25 @@ import Blog from "./pages/Blog";
 import Diaspora from "./pages/Diaspora";
 
 const pageVariants = {
-  initial: { opacity: 0.7, y: 30 }, // Start slightly lower
-  animate: { opacity: 1, y: 0, transition: { duration: 0.6 } }, // Smooth transition up
-  exit: { opacity: 0.7, y: -30, transition: { duration: 0.4 } }, // Slide up on exit
+  initial: { opacity: 0, y: 20, scale: 0.98 }, // Start slightly lower & smaller
+  animate: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1], // Custom ease for a smooth effect
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -20,
+    scale: 0.98,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
+  },
 };
 
 function App() {

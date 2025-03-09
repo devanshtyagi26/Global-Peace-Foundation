@@ -42,29 +42,7 @@
         "description": "On February 11, 2025, a preparatory meeting with prominent diplomats was held at the India International Centre to strategize for the upcoming session of the forum."
       }
     },
-    "partners": {
-      "title": "Our Partners",
-      "subtitle": "Working together with leading organizations to create positive change across the Indo-Pacific region",
-      "visitWebsite": "Visit Website",
-      "list": {
-        "asean": {
-          "name": "ASEAN Youth Organization",
-          "description": "Empowering ASEAN youth through regional cooperation"
-        },
-        "pacific": {
-          "name": "Pacific Islands Forum",
-          "description": "Promoting Pacific regional integration and cooperation"
-        },
-        "un": {
-          "name": "UN Youth",
-          "description": "Supporting youth engagement in UN initiatives"
-        },
-        "asia": {
-          "name": "Asia Foundation",
-          "description": "Building a peaceful and thriving Asia-Pacific"
-        }
-      }
-    },
+    
     "testimonials": {
       "title": "What Our Community Says",
       "list": {

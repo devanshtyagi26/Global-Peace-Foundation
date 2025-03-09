@@ -93,7 +93,7 @@ const About = () => {
             alt={t("hero.imageAlt")}
           />
         </div>
-        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8 sm:pt-[13rem] sm:pb-[2rem] max-md:pt-[0.1rem] max-md:pb-16">
+        <div className="relative px-4 py-24 mx-auto md:max-w-[57rem] w-full sm:py-32 sm:px-6 lg:px-8 sm:pt-[13rem] sm:pb-[2rem] max-md:pt-[0.1rem] max-md:pb-16">
           <div className="flex mt-10 space-x-4 relative max-md:-bottom-12">
             <button
               onClick={() => setqr(true)}
@@ -114,12 +114,12 @@ const About = () => {
 
       {/* About Us Section */}
       <section id="aboutUs" className="py-16 bg-white">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg">
               {t("about.AboutUs.title")}
             </h2>
-            <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+            <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
               {t("about.AboutUs.subtitle")
                 .split("\n")
                 .map((line, index) => (
@@ -134,12 +134,12 @@ const About = () => {
       </section>
       {/* Vision Section */}
       <section id="vision" className="py-16 bg-white">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg">
               {t("about.Vision.title")}
             </h2>
-            <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+            <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
               {t("about.Vision.subtitle")
                 .split("\n")
                 .map((line, index) => (
@@ -154,12 +154,12 @@ const About = () => {
       </section>
       {/* Mission Section */}
       <section id="mission" className="py-16 bg-white">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg">
               {t("about.mission.title")}
             </h2>
-            <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+            <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
               {t("about.mission.subtitle")
                 .split("\n")
                 .map((line, index) => (
@@ -174,18 +174,18 @@ const About = () => {
           <div className="mt-16">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="text-lg font-medium text-gray-900">
+                <h3 className="text-justify text-lg font-medium text-gray-900">
                   {t("about.mission.cultural.title")}
                 </h3>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-justify text-lg text-gray-600">
                   {t("about.mission.cultural.description")}
                 </p>
               </div>
               <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="text-lg font-medium text-gray-900">
+                <h3 className="text-justify text-lg font-medium text-gray-900">
                   {t("about.mission.leadership.title")}
                 </h3>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-justify text-lg text-gray-600">
                   {t("about.mission.leadership.description")}
                 </p>
               </div>
@@ -194,57 +194,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              {t("about.partners.title")}
-            </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-xl text-gray-500">
-              {t("about.partners.subtitle")}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-12 mt-16 sm:grid-cols-2 lg:grid-cols-4">
-            {partners.map((partner, index) => (
-              <div
-                key={index}
-                className="relative p-6 transition-shadow duration-300 bg-white shadow-sm rounded-xl hover:shadow-md"
-              >
-                <div className="flex items-center justify-center h-32 mb-6">
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="object-contain h-20 transition-all duration-300 transform hover:scale-110"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {partner.name}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-500">
-                    {partner.description}
-                  </p>
-                  <a
-                    href={partner.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center mt-4 text-sm font-medium text-indigo-600 hover:text-indigo-500"
-                  >
-                    {t("about.partners.visitWebsite")}
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section className="py-16 bg-white">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <h2 className="mb-12 text-3xl font-extrabold text-center text-gray-900">
             {t("about.testimonials.title")}
           </h2>
@@ -258,7 +210,7 @@ const About = () => {
                     className="w-12 h-12 mr-4 rounded-full"
                   />
                   <div>
-                    <h3 className="text-lg font-medium text-gray-900">
+                    <h3 className="text-justify text-lg font-medium text-gray-900">
                       {testimonial.author}
                     </h3>
                     <p className="text-gray-600">{testimonial.role}</p>
@@ -273,7 +225,7 @@ const About = () => {
 
       {/* Case Studies Section */}
       <section className="py-16 bg-gray-50">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <h2 className="mb-12 text-3xl font-extrabold text-center text-gray-900">
             {t("about.impact.title")}
           </h2>
@@ -305,12 +257,12 @@ const About = () => {
 
       {/* Social Media Section */}
       <section className="py-20 bg-gradient-to-b from-white to-indigo-50">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
               {t("about.social.title")}
             </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-xl text-gray-500">
+            <p className="md:max-w-[57rem] w-full mx-auto mt-4 text-xl text-gray-500">
               {t("about.social.subtitle")}
             </p>
           </div>
