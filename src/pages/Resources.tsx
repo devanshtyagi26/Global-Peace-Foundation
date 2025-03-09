@@ -1,5 +1,4 @@
 import { useState } from "react";
-import sfg from "../assets/PDF/Launch of Indo Pacific Peace Forum - Article.pdf";
 import {
   FileText,
   Download,

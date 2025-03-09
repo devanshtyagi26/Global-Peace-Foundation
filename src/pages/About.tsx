@@ -6,7 +6,6 @@ import QR from "../assets/qr.jpg";
 import Banner from "../assets/Picture1.jpg";
 import first_story from "../assets/Impact Stories/first.jpg";
 import second_story from "../assets/Impact Stories/second.jpg";
-
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -16,6 +15,7 @@ import {
   LinkedinIcon,
 } from "react-share";
 import SdgOutline from "../components/SdgOutline";
+import { Carousel } from "../components/Carousel";
 
 const About = () => {
   const [qr, setqr] = React.useState(false);
@@ -120,9 +120,11 @@ const About = () => {
       <section id="aboutUs" className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[1.75rem]">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative">
               {t("about.AboutUs.title")}
+              <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
+
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
               {t("about.AboutUs.subtitle")
                 .split("\n")
@@ -136,12 +138,15 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Carousel />
+      <SdgOutline />
       {/* Vision Section */}
       <section id="vision" className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[1.75rem]">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative">
               {t("about.Vision.title")}
+              <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
               {t("about.Vision.subtitle")
@@ -160,8 +165,9 @@ const About = () => {
       <section id="mission" className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[1.75rem]">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative">
               {t("about.mission.title")}
+              <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
               {t("about.mission.subtitle")
@@ -176,8 +182,9 @@ const About = () => {
           </div>
 
           <div className="mt-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-[1.7rem] leading-[3.75rem] sm:leading-[4.5rem] leading-[4.5rem]">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative pb-[2rem]">
               {t("about.mission.impactStories.title")}
+              <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-[1.5rem]">
               <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
