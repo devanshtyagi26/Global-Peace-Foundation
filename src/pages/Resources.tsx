@@ -1,82 +1,85 @@
-import React, { useState } from 'react';
-import { FileText, Download, Search, BookOpen, FileCheck, Filter } from 'lucide-react';
+import { useState } from "react";
+import sfg from "../assets/PDF/Launch of Indo Pacific Peace Forum - Article.pdf";
+import {
+  FileText,
+  Download,
+  Search,
+  BookOpen,
+  FileCheck,
+  Filter,
+} from "lucide-react";
 
 const RESOURCES = [
   {
     id: 1,
-    title: 'Youth Leadership in the Indo-Pacific: A Comprehensive Study',
-    type: 'report',
-    category: 'Leadership',
-    date: '2024-02',
-    description: 'An in-depth analysis of youth leadership trends and opportunities across the region.',
-    downloadUrl: '#',
-    fileSize: '2.4 MB',
-    format: 'PDF'
+    title:
+      "Experts Convene to Shape Indo-Pacific Region Peace and Security Agenda",
+    type: "report",
+    date: "2025-02",
+    description:
+      "Press Note: A proprietary meeting conducted with various diplomats for planning and execution of the upcoming episode of the forum.",
+    downloadUrl: "../assets/PDF/Press Notes February 11, 2025 - Report.pdf",
+    fileSize: "51 KB",
+    format: "PDF",
   },
   {
     id: 2,
-    title: 'Cultural Exchange Impact Assessment',
-    type: 'paper',
-    category: 'Cultural Studies',
-    date: '2024-01',
-    description: 'Research paper examining the long-term effects of cultural exchange programs.',
-    downloadUrl: '#',
-    fileSize: '1.8 MB',
-    format: 'PDF'
+    title: "Peace and Security in the Indo-Pacific Region : Shaping Stability",
+    type: "book",
+    date: "2024",
+    description:
+      "A comprehensive analysis of Indo-Pacific security, highlighting geopolitical challenges, maritime security, climate resilience, and regional cooperation.",
+    downloadUrl: "../assets/PDF/Peace and Security - Book.pdf",
+    fileSize: "11.8 MB",
+    format: "PDF",
   },
   {
     id: 3,
-    title: 'Regional Cooperation Framework Guide',
-    type: 'guide',
-    category: 'Cooperation',
-    date: '2024-03',
-    description: 'Practical guide for establishing and maintaining regional partnerships.',
-    downloadUrl: '#',
-    fileSize: '3.2 MB',
-    format: 'PDF'
+    title: "Launc of Indo-Pacific Peace Forum at ARSP, New Delhi",
+    type: "article",
+    date: "2024-03",
+    description:
+      "A round table Workshop on Peace and Security in the Indo-Pacific Region: Charting a Path Toward Stability",
+    downloadUrl:
+      "../assets/PDF/Launch of Indo Pacific Peace Forum - Article.pdf",
+    fileSize: "97 KB",
+    format: "PDF",
   },
-  {
-    id: 4,
-    title: 'Youth Engagement Best Practices',
-    type: 'report',
-    category: 'Engagement',
-    date: '2024-02',
-    description: 'Comprehensive report on successful youth engagement strategies.',
-    downloadUrl: '#',
-    fileSize: '4.1 MB',
-    format: 'PDF'
-  }
 ];
 
 const Resources = () => {
-  const [filter, setFilter] = useState<'all' | 'report' | 'paper' | 'guide'>('all');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [filter, setFilter] = useState<"all" | "report" | "book" | "article">(
+    "all"
+  );
+  const [searchTerm, setSearchTerm] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const getIcon = (type: string) => {
     switch (type) {
-      case 'report':
+      case "report":
         return <FileText className="w-6 h-6" />;
-      case 'paper':
+      case "book":
         return <BookOpen className="w-6 h-6" />;
-      case 'guide':
+      case "article":
         return <FileCheck className="w-6 h-6" />;
       default:
         return <FileText className="w-6 h-6" />;
     }
   };
 
-  const handleFilterChange = (newFilter: 'all' | 'report' | 'paper' | 'guide') => {
+  const handleFilterChange = (
+    newFilter: "all" | "report" | "book" | "article"
+  ) => {
     setIsLoading(true);
     setFilter(newFilter);
     setTimeout(() => setIsLoading(false), 300);
   };
 
-  const filteredResources = RESOURCES.filter(resource => {
-    const matchesFilter = filter === 'all' || resource.type === filter;
-    const matchesSearch = resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         resource.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         resource.category.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredResources = RESOURCES.filter((resource) => {
+    const matchesFilter = filter === "all" || resource.type === filter;
+    const matchesSearch =
+      resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      resource.description.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesFilter && matchesSearch;
   });
 
@@ -88,7 +91,8 @@ const Resources = () => {
             Resources
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Access our collection of reports, research papers, and guides to support your engagement in the Indo-Pacific youth community.
+            Access our collection of reports, books, and guides to support your
+            engagement in the Indo-Pacific youth community.
           </p>
         </div>
 
@@ -106,50 +110,52 @@ const Resources = () => {
 
           <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1 shadow-sm">
             <button
-              onClick={() => handleFilterChange('all')}
+              onClick={() => handleFilterChange("all")}
               className={`inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                filter === 'all'
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'text-gray-700 hover:text-indigo-600'
+                filter === "all"
+                  ? "bg-[#033558] text-white shadow-md"
+                  : "text-gray-700 hover:text-[#678cb8]"
               }`}
             >
               <Filter className="w-4 h-4 mr-2" />
               All
             </button>
             <button
-              onClick={() => handleFilterChange('report')}
+              onClick={() => handleFilterChange("report")}
               className={`inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                filter === 'report'
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'text-gray-700 hover:text-indigo-600'
+                filter === "report"
+                  ? "bg-[#033558] text-white shadow-md"
+                  : "text-gray-700 hover:text-[#678cb8]"
               }`}
             >
               Reports
             </button>
             <button
-              onClick={() => handleFilterChange('paper')}
+              onClick={() => handleFilterChange("book")}
               className={`inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                filter === 'paper'
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'text-gray-700 hover:text-indigo-600'
+                filter === "book"
+                  ? "bg-[#033558] text-white shadow-md"
+                  : "text-gray-700 hover:text-[#678cb8]"
               }`}
             >
-              Papers
+              Books
             </button>
             <button
-              onClick={() => handleFilterChange('guide')}
+              onClick={() => handleFilterChange("article")}
               className={`inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                filter === 'guide'
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'text-gray-700 hover:text-indigo-600'
+                filter === "article"
+                  ? "bg-[#033558] text-white shadow-md"
+                  : "text-gray-700 hover:text-[#678cb8]"
               }`}
             >
-              Guides
+              Articles
             </button>
           </div>
         </div>
 
-        <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 transition-opacity duration-300 ${isLoading ? 'opacity-50' : 'opacity-100'}`}>
+        <div
+          className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 transition-opacity duration-300 ${isLoading ? "opacity-50" : "opacity-100"}`}
+        >
           {filteredResources.map((resource, index) => (
             <div
               key={resource.id}
@@ -158,33 +164,39 @@ const Resources = () => {
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
-                    resource.type === 'report' ? 'bg-blue-100 text-blue-800' :
-                    resource.type === 'paper' ? 'bg-purple-100 text-purple-800' :
-                    'bg-green-100 text-green-800'
-                  }`}>
+                  <span
+                    className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
+                      resource.type === "report"
+                        ? "bg-blue-100 text-blue-800"
+                        : resource.type === "book"
+                          ? "bg-purple-100 text-purple-800"
+                          : "bg-green-100 text-green-800"
+                    }`}
+                  >
                     {getIcon(resource.type)}
-                    <span className="ml-2">{resource.type.charAt(0).toUpperCase() + resource.type.slice(1)}</span>
+                    <span className="ml-2">
+                      {resource.type.charAt(0).toUpperCase() +
+                        resource.type.slice(1)}
+                    </span>
                   </span>
                   <span className="text-sm text-gray-500">{resource.date}</span>
                 </div>
 
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 transition-colors duration-300 hover:text-indigo-600">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 transition-colors duration-300 hover:text-[#678cb8]">
                   {resource.title}
                 </h3>
-                
-                <p className="text-gray-600 mb-4">
-                  {resource.description}
-                </p>
+
+                <p className="text-gray-600 mb-4">{resource.description}</p>
 
                 <div className="flex items-center justify-between mt-4">
                   <span className="text-sm text-gray-500">
                     {resource.fileSize} • {resource.format}
                   </span>
-                  
+
                   <a
                     href={resource.downloadUrl}
-                    className="inline-flex items-center px-4 py-2 rounded-md text-sm font-medium text-white bg-indigo-600 transition-all duration-300 ease-in-out transform hover:bg-indigo-700 hover:scale-105 hover:shadow-lg"
+                    download={`${resource.title}.pdf`} // Properly concatenates the filename
+                    className="inline-flex items-center px-4 py-2 rounded-md text-sm font-medium text-white bg-[#033558] transition-all duration-300 ease-in-out transform hover:bg-[#033558] hover:scale-105 hover:shadow-lg"
                   >
                     <Download className="w-4 h-4 mr-2" />
                     Download
