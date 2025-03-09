@@ -39,9 +39,19 @@ const RESOURCES = [
     date: "2024-03",
     description:
       "A round table Workshop on Peace and Security in the Indo-Pacific Region: Charting a Path Toward Stability",
-    downloadUrl:
-      "/PDF/Launch of Indo Pacific Peace Forum - Article.pdf",
+    downloadUrl: "/PDF/Launch of Indo Pacific Peace Forum - Article.pdf",
     fileSize: "97 KB",
+    format: "PDF",
+  },
+  {
+    id: 4,
+    title: "IPPF Newsletter",
+    type: "report",
+    date: "2024-09",
+    description:
+      "An engagement report of the launch of Indo-Pacific Peace Forum held at ARSP, NEW DELHI",
+    downloadUrl: "/PDF/IPPF Newsletter_20250309_171408_0000 - Report.pdf",
+    fileSize: "32.5 MB",
     format: "PDF",
   },
 ];
