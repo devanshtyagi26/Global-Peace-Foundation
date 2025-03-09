@@ -40,18 +40,18 @@ const Navigation = () => {
     { label: t("navigation.contact"), href: "/contact" },
   ];
 
-  const moreMenuItems = [
-    {
-      label: t("navigation.blog.title"),
-      href: "/blog",
-      description: t("navigation.blog.subtitle"),
-    },
-    {
-      label: t("navigation.Peace.title"),
-      href: "/Peace",
-      description: t("navigation.Peace.subtitle"),
-    },
-  ];
+  // const moreMenuItems = [
+  //   {
+  //     label: t("navigation.blog.title"),
+  //     href: "/blog",
+  //     description: t("navigation.blog.subtitle"),
+  //   },
+  //   {
+  //     label: t("navigation.Peace.title"),
+  //     href: "/Peace",
+  //     description: t("navigation.Peace.subtitle"),
+  //   },
+  // ];
 
   const isActive = (href: string) => location.pathname === href;
 
@@ -93,7 +93,7 @@ const Navigation = () => {
                 </Link>
               ))}
 
-              <div className="relative" ref={dropdownRef}>
+              {/* <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setIsMoreOpen(!isMoreOpen)}
                   className={`text-black hover:bg-[#033558] px-3 py-2 rounded-md text-sm font-medium inline-flex items-center transition-colors duration-200 ${
@@ -147,7 +147,7 @@ const Navigation = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <button
                 onClick={toggleLanguage}
@@ -206,7 +206,7 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            {moreMenuItems.map((item) => (
+            {/* {moreMenuItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
@@ -219,7 +219,7 @@ const Navigation = () => {
               >
                 {item.label}
               </Link>
-            ))}
+            ))} */}
             <button
               onClick={toggleLanguage}
               className="flex items-center w-full px-3 py-2 text-base font-medium text-left text-black transition-colors duration-200 rounded-md hover:bg-[#033558] hover:text-white"
