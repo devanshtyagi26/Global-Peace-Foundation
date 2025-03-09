@@ -29,11 +29,11 @@ const Footer = () => {
   }, [location.pathname]);
 
   return (
-    <footer className="relative text-white bg-gradient-to-b from-gray-900 to-indigo-900">
+    <footer className="relative text-white bg-gradient-to-b from-gray-900 to-[#033558]">
       {/* Scroll to top button */}
       <button
         onClick={scrollToTop}
-        className="absolute p-2 text-indigo-600 transition-all duration-300 transform -translate-x-1/2 bg-white rounded-full shadow-lg -top-5 left-1/2 hover:shadow-xl hover:scale-110 focus:outline-none group"
+        className="absolute p-2 text-[#033558] transition-all duration-300 transform -translate-x-1/2 bg-white rounded-full shadow-lg -top-5 left-1/2 hover:shadow-xl hover:scale-110 focus:outline-none group"
         aria-label="Scroll to top"
       >
         <ArrowUpCircle className="w-8 h-8 animate-bounce group-hover:animate-none" />
@@ -119,25 +119,25 @@ const Footer = () => {
             <h3 className="text-xl font-bold">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3 group">
-                <Mail className="w-5 h-5 text-indigo-400 transition-colors duration-300 group-hover:text-indigo-300" />
+                <Mail className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
                   support@ipyf.org
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
-                <Phone className="w-5 h-5 text-indigo-400 transition-colors duration-300 group-hover:text-indigo-300" />
+                <Phone className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
                   +1 (123) 456-7890
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
-                <MapPin className="w-5 h-5 text-indigo-400 transition-colors duration-300 group-hover:text-indigo-300" />
+                <MapPin className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
                   123 Innovation Drive, Singapore
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
-                <Globe className="w-5 h-5 text-indigo-400 transition-colors duration-300 group-hover:text-indigo-300" />
+                <Globe className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
                   www.ipyf.org
                 </span>
@@ -163,7 +163,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition-all duration-300 transform hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full px-4 py-2 bg-[#678cb8] text-white rounded-lg hover:bg-indigo-500 transition-all duration-300 transform hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Subscribe
               </button>
