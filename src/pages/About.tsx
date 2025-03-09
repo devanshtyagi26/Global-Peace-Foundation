@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { InstagramEmbed } from "react-social-media-embed";
 import QR from "../assets/qr.jpg";
 import Banner from "../assets/Picture1.jpg";
+import first_story from "../assets/Impact Stories/first.jpg";
+import second_story from "../assets/Impact Stories/second.jpg";
 
 import {
   FacebookShareButton,
@@ -172,21 +174,20 @@ const About = () => {
           </div>
 
           <div className="mt-16">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="text-justify text-lg font-medium text-gray-900">
-                  {t("about.mission.cultural.title")}
-                </h3>
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-justify text-lg sm:leading-[4.5rem] leading-[4.5rem]">
+              {t("about.mission.impactStories.title")}
+            </h2>
+            <div className="flex flex-wrap justify-center items-center gap-[1.5rem]">
+              <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
+                <img src={first_story} />
                 <p className="mt-2 text-justify text-lg text-gray-600">
-                  {t("about.mission.cultural.description")}
+                  {t("about.mission.impactStories.first.description")}
                 </p>
               </div>
-              <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="text-justify text-lg font-medium text-gray-900">
-                  {t("about.mission.leadership.title")}
-                </h3>
+              <div className="p-6 rounded-lg bg-[#e8f5f9] w-[28rem] sm:w-[22rem]">
+                <img src={second_story} />
                 <p className="mt-2 text-justify text-lg text-gray-600">
-                  {t("about.mission.leadership.description")}
+                  {t("about.mission.impactStories.second.description")}
                 </p>
               </div>
             </div>

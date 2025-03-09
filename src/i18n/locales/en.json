@@ -33,16 +33,17 @@
     "mission": {
       "title": "Our Mission",
       "subtitle": "The Indo-Pacific Peace Forum champions a peaceful, secure and prosperous future for the region We achieve this by: \n Fostering dialogue and collaboration, We bring diverse stakeholders together to address critical issues, Building trust and understanding, We promote dialogue, cultural exchange, and capacity building, Championing a rules-based order, We advocate for respect for international law, sovereignty, and peaceful dispute resolution, Empowering regional leadership We support regional ownership and solutions.\nPromoting a sustainable future: We foster cooperation on emerging threats and advocate for inclusive development.",
-      "cultural": {
-        "title": "Cultural Exchange",
-        "description": "On September 27, 2024, the Indo-Pacific Peace Forum was inaugurated at Antar-Rashtriya Sahyog Parishad, New Delhi, bringing together diplomats and subject matter experts for high-level discussions."
-      },
-      "leadership": {
-        "title": "Leadership Development",
-        "description": "On February 11, 2025, a preparatory meeting with prominent diplomats was held at the India International Centre to strategize for the upcoming session of the forum."
+      "impactStories": {
+        "title": "Highlights",
+        "first": {
+          "description": "On September 27, 2024, the Indo-Pacific Peace Forum was inaugurated at Antar-Rashtriya Sahyog Parishad, New Delhi, bringing together diplomats and subject matter experts for high-level discussions."
+        },
+        "second": {
+          "description": "On February 11, 2025, a preparatory meeting with prominent diplomats was held at the India International Centre to strategize for the upcoming session of the forum."
+        }
       }
     },
-    
+
     "testimonials": {
       "title": "What Our Community Says",
       "list": {
