@@ -15,6 +15,7 @@ import {
   XIcon,
   LinkedinIcon,
 } from "react-share";
+import SdgOutline from "../components/SdgOutline";
 
 const About = () => {
   const [qr, setqr] = React.useState(false);
@@ -94,6 +95,7 @@ const About = () => {
             src={Banner}
             alt={t("hero.imageAlt")}
           />
+          <SdgOutline />
         </div>
         <div className="relative px-4 py-24 mx-auto md:max-w-[57rem] w-full sm:py-32 sm:px-6 lg:px-8 sm:pt-[13rem] sm:pb-[2rem] max-md:pt-[0.1rem] max-md:pb-16">
           <div className="flex mt-10 space-x-4 relative max-md:-bottom-12">
