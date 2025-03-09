@@ -8,6 +8,7 @@ import Events from "./pages/Events";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import Diaspora from "./pages/Diaspora";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<About />} />
             <Route path="/events" element={<Events />} />
             <Route path="/blueEconomy" element={<BlueEconomy />} />
+            <Route path="/diaspora" element={<Diaspora />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />

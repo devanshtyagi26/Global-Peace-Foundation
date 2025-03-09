@@ -35,6 +35,7 @@ const Navigation = () => {
     { label: t("navigation.about"), href: "/" },
     { label: t("navigation.events"), href: "/events" },
     { label: t("navigation.blueEconomy"), href: "/blueEconomy" },
+    { label: t("navigation.diaspora"), href: "/diaspora" },
     { label: t("navigation.resources"), href: "/resources" },
     { label: t("navigation.contact"), href: "/contact" },
   ];
