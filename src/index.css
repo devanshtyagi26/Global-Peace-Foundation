@@ -1,12 +1,9 @@
-/* Step 1: Import CSS files at the top */
-@import "./node_modules/preline/variants.css"; /* External imports */
-
-/* Step 2: Tailwind imports should come after @import */
+/* Step 2: Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Step 3: Your custom styles and animations go here */
+/* Step 3: Your custom styles and animations */
 @keyframes fade-in {
   from {
     opacity: 0;

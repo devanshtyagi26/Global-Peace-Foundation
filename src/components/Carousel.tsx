@@ -17,7 +17,7 @@ export const Carousel = () => {
           <div className="hs-carousel-slide h-full w-full">
             <div className="flex justify-center items-center w-full h-full bg-gray-100">
               <img
-                src="../assets/Carousel/one.jpg"
+                src={one}
                 className="w-full h-full object-cover"
                 alt="Slide 1"
               />
