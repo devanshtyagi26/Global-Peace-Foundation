@@ -7,7 +7,6 @@ import BlueEconomy from "./pages/BlueEconomy";
 import Events from "./pages/Events";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
-import Blog from "./pages/Blog";
 import Diaspora from "./pages/Diaspora";
 
 const pageVariants = {
