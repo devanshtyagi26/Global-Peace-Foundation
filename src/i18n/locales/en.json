@@ -77,7 +77,7 @@
           "name": "Instagram",
           "handle": "@ippf_gpfindia"
         },
-        "twitter": {"name": "X", "handle": "@ippf_gpfindia"},
+        "twitter": { "name": "X", "handle": "@ippf_gpfindia" },
         "linkedin": {
           "name": "LinkedIn",
           "handle": "Indo Pacific Peace Forum"
@@ -100,19 +100,9 @@
     "registerNow": "Register Now",
     "list": {
       "summit": {
-        "title": "Youth Leadership Summit 2024",
-        "location": "Singapore",
-        "description": "Join young leaders from across the Indo-Pacific region for a day of inspiration, networking, and skill-building."
-      },
-      "workshop": {
-        "title": "Cultural Exchange Workshop",
-        "location": "Tokyo, Japan",
-        "description": "Experience and share cultural traditions from different Indo-Pacific nations through interactive workshops."
-      },
-      "conference": {
-        "title": "Regional Peace Conference",
-        "location": "Bangkok, Thailand",
-        "description": "A successful gathering of youth representatives discussing peace initiatives and regional cooperation."
+        "title": "Indo Pacific Peace Forum 1.0",
+        "location": "C.D. Deshmukh Auditorium, IIC, New Delhi",
+        "description": "Indo Pacific Peace Conference on the theme of peace and security in the indo pacific region: Significance of ideas and thoughts."
       }
     }
   },

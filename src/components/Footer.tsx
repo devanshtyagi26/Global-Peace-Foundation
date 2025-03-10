@@ -113,15 +113,15 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div
-            className="space-y-4 animate-fade-slide-up"
+            className="space-y-6 w-[19rem] animate-fade-slide-up"
             style={{ animationDelay: "300ms" }}
           >
             <h3 className="text-xl font-bold">Contact Us</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               <li className="flex items-center space-x-3 group">
                 <Mail className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
-                  support@ipyf.org
+                  indopacificpeaceforum@gmail.com
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
@@ -133,7 +133,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3 group">
                 <MapPin className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
-                  123 Innovation Drive, Singapore
+                  Paryavaran Complex, Sainik Farm, New Delhi, Delhi - 110030
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
