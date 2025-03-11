@@ -48,14 +48,34 @@
       "title": "What Our Community Says",
       "list": {
         "first": {
-          "quote": "The Indo-Pacific Youth Forum has been instrumental in connecting young leaders and fostering meaningful collaboration across borders.",
-          "author": "Sarah Chen",
-          "role": "Youth Ambassador, Singapore"
+          "quote": "The Indo-Pacific region holds immense potential, and through mutual understanding and collaboration, we can unlock it. India must lead the way with diplomacy, development, and sustainable practices to ensure a peaceful future.",
+          "author": "Dr. Markandey Rai",
+          "role": "Chairman GPF India & President IPPF"
         },
         "second": {
-          "quote": "Through IPYF's programs, I've gained valuable leadership skills and a deeper understanding of regional challenges.",
-          "author": "James Kumar",
-          "role": "Program Participant, India"
+          "quote": "Leadership is key to fostering peace, and each of us has a role to play. Embracing Vasudhaiva Kutumbakam, we can mitigate conflict through education, cooperation, and dialogue to build a more peaceful future for the Indo-Pacific.",
+          "author": "Prof Dr. Priyaranjan Trivedi",
+          "role": "President Confederation of Indian Universities "
+        },
+        "third": {
+          "quote": "The Indo-Pacific will flourish if we embrace Vasudhaiva Kutumbakam and the shared traditions of Asian nations. Strengthening cross-cultural interaction, involving youth in new projects, and enhancing regional connectivity will pave the way for a more cooperative and prosperous future.",
+          "author": "Ambassador Shashank",
+          "role": "Former President ARSP"
+        },
+        "fourth": {
+          "quote": "India's leadership in SAGAR highlights the strategic importance of maritime boundaries in the Indo-Pacific. Through wisdom-based strategies, we continue to strengthen regional stability and cooperation.",
+          "author": "Mr. Sanjay Bhalla",
+          "role": "Vice President,  ARSP "
+        },
+        "fifth": {
+          "quote": "This forum can empower rural India and women by fostering inclusive dialogue, enhancing skill development, and creating opportunities for their active participation in regional growth and sustainability.",
+          "author": "Ms. Rekha Udit",
+          "role": ""
+        },
+        "sixth": {
+          "quote": "Strengthening infrastructure, security, technology, and partnerships between India and Kenya is key to regional growth. A reformed multilateral and financial system can better address emerging challenges in the Global South, benefiting Africa and Asia alike.",
+          "author": "Winnie Mwanjala",
+          "role": "Head of Chancery, Kenya"
         }
       }
     },

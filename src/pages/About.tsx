@@ -55,15 +55,37 @@ const About = () => {
       quote: t("about.testimonials.list.first.quote"),
       author: t("about.testimonials.list.first.author"),
       role: t("about.testimonials.list.first.role"),
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&fit=crop",
+      image: "/Testimonials/rai.jpg",
     },
     {
       quote: t("about.testimonials.list.second.quote"),
       author: t("about.testimonials.list.second.author"),
       role: t("about.testimonials.list.second.role"),
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&fit=crop",
+      image: "/Testimonials/trivedi.jpg",
+    },
+    {
+      quote: t("about.testimonials.list.third.quote"),
+      author: t("about.testimonials.list.third.author"),
+      role: t("about.testimonials.list.third.role"),
+      image: "/Testimonials/shashank.jpg",
+    },
+    {
+      quote: t("about.testimonials.list.fourth.quote"),
+      author: t("about.testimonials.list.fourth.author"),
+      role: t("about.testimonials.list.fourth.role"),
+      image: "/Testimonials/sanjay.jpg",
+    },
+    {
+      quote: t("about.testimonials.list.fifth.quote"),
+      author: t("about.testimonials.list.fifth.author"),
+      role: t("about.testimonials.list.fifth.role"),
+      image: "/Testimonials/rekha.jpg",
+    },
+    {
+      quote: t("about.testimonials.list.sixth.quote"),
+      author: t("about.testimonials.list.sixth.author"),
+      role: t("about.testimonials.list.sixth.role"),
+      image: "/Testimonials/winnie.jpg",
     },
   ];
 
