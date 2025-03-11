@@ -18,7 +18,8 @@ const Events = () => {
     {
       id: 1,
       title: t("events.list.summit.title"),
-      date: "2024-03-19",
+      datefrom: "2024-03-19",
+      dateto: "2024-03-20",
       time: "09:00 AM - 05:00 PM",
       location: t("events.list.summit.location"),
       type: "upcoming",
@@ -26,7 +27,8 @@ const Events = () => {
       spotsLeft: 45,
       description: t("events.list.summit.description"),
       image: "/Events/IPPF.jpg",
-      registrationLink: "#register",
+      registrationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSdzzppL4bFxtgMsD5enI9n8ZV-7VRUyxKsRobSFYEiiGM1UdQ/viewform",
     },
   ];
 
@@ -98,7 +100,7 @@ const Events = () => {
               className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-102 hover:shadow-xl animate-fade-slide-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-[17rem] overflow-hidden">
                 <img
                   src={event.image}
                   alt={event.title}
@@ -125,7 +127,10 @@ const Events = () => {
                 <div className="space-y-3">
                   <div className="flex items-center text-gray-600 transition-transform duration-300 hover:translate-x-2">
                     <Calendar className="w-5 h-5 mr-2" />
-                    <span>{new Date(event.date).toLocaleDateString()}</span>
+                    <span>
+                      {new Date(event.datefrom).toLocaleDateString()} -{" "}
+                      {new Date(event.dateto).toLocaleDateString()}{" "}
+                    </span>
                   </div>
 
                   <div className="flex items-center text-gray-600 transition-transform duration-300 hover:translate-x-2">
@@ -150,6 +155,7 @@ const Events = () => {
                 {event.type === "upcoming" && event.spotsLeft > 0 && (
                   <a
                     href={event.registrationLink}
+                    target="_blank"
                     className="mt-6 inline-flex items-center justify-center w-full px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 transition-all duration-300 ease-in-out transform hover:bg-indigo-700 hover:scale-105 hover:shadow-lg"
                   >
                     {t("events.registerNow")}
