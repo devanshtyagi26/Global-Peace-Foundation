@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "about": "概要",
+    "home": "ホーム",
     "events": "イベント",
     "resources": "リソース",
     "contact": "お問い合わせ",
@@ -10,10 +10,9 @@
       "subtitle": "ニュース"
     },
     "youth": {
-      "title": "ユース",
-      "subtitle": "ユースプログラム"
+      "title": "青少年",
+      "subtitle": "青少年プログラム"
     }
-
   },
   "hero": {
     "title": "インド太平洋の若者たちをエンパワーする",
@@ -106,18 +105,17 @@
         "title": "フォローする",
         "subtitle": "ソーシャルメディアコミュニティに参加",
         "instagram": {
-            "name": "インスタグラム",
-            "handle": "@indo_pacific_youth"
+          "name": "インスタグラム",
+          "handle": "@indo_pacific_youth"
         },
         "facebook": {
-            "name": "フェイスブック",
-            "handle": "Indo-Pacific Youth Forum"
+          "name": "フェイスブック",
+          "handle": "Indo-Pacific Youth Forum"
         },
         "linkedin": {
-            "name": "リンクトイン",
-            "handle": "Indo-Pacific Youth Forum"
+          "name": "リンクトイン",
+          "handle": "Indo-Pacific Youth Forum"
         }
-
       }
     }
   },

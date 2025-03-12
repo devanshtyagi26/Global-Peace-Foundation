@@ -17,7 +17,7 @@ import {
 import SdgOutline from "../components/SdgOutline";
 import { Carousel } from "../components/Carousel";
 
-const About = () => {
+const Home = () => {
   const [qr, setqr] = React.useState(false);
   const { t } = useTranslation();
   const shareUrl = window.location.origin;
@@ -25,82 +25,82 @@ const About = () => {
 
   const partners = [
     {
-      name: t("about.partners.list.asean.name"),
+      name: t("home.partners.list.asean.name"),
       logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&fit=crop",
-      description: t("about.partners.list.asean.description"),
+      description: t("home.partners.list.asean.description"),
       website: "https://aseanyouth.org",
     },
     {
-      name: t("about.partners.list.pacific.name"),
+      name: t("home.partners.list.pacific.name"),
       logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=200&fit=crop",
-      description: t("about.partners.list.pacific.description"),
+      description: t("home.partners.list.pacific.description"),
       website: "https://www.forumsec.org",
     },
     {
-      name: t("about.partners.list.un.name"),
+      name: t("home.partners.list.un.name"),
       logo: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=200&fit=crop",
-      description: t("about.partners.list.un.description"),
+      description: t("home.partners.list.un.description"),
       website: "https://unyouth.org",
     },
     {
-      name: t("about.partners.list.asia.name"),
+      name: t("home.partners.list.asia.name"),
       logo: "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=200&fit=crop",
-      description: t("about.partners.list.asia.description"),
+      description: t("home.partners.list.asia.description"),
       website: "https://asiafoundation.org",
     },
   ];
 
   const testimonials = [
     {
-      quote: t("about.testimonials.list.first.quote"),
-      author: t("about.testimonials.list.first.author"),
-      role: t("about.testimonials.list.first.role"),
+      quote: t("home.testimonials.list.first.quote"),
+      author: t("home.testimonials.list.first.author"),
+      role: t("home.testimonials.list.first.role"),
       image: "/Testimonials/rai.jpg",
     },
     {
-      quote: t("about.testimonials.list.second.quote"),
-      author: t("about.testimonials.list.second.author"),
-      role: t("about.testimonials.list.second.role"),
+      quote: t("home.testimonials.list.second.quote"),
+      author: t("home.testimonials.list.second.author"),
+      role: t("home.testimonials.list.second.role"),
       image: "/Testimonials/trivedi.jpg",
     },
     {
-      quote: t("about.testimonials.list.third.quote"),
-      author: t("about.testimonials.list.third.author"),
-      role: t("about.testimonials.list.third.role"),
+      quote: t("home.testimonials.list.third.quote"),
+      author: t("home.testimonials.list.third.author"),
+      role: t("home.testimonials.list.third.role"),
       image: "/Testimonials/shashank.jpg",
     },
     {
-      quote: t("about.testimonials.list.fourth.quote"),
-      author: t("about.testimonials.list.fourth.author"),
-      role: t("about.testimonials.list.fourth.role"),
+      quote: t("home.testimonials.list.fourth.quote"),
+      author: t("home.testimonials.list.fourth.author"),
+      role: t("home.testimonials.list.fourth.role"),
       image: "/Testimonials/sanjay.jpg",
     },
     {
-      quote: t("about.testimonials.list.fifth.quote"),
-      author: t("about.testimonials.list.fifth.author"),
-      role: t("about.testimonials.list.fifth.role"),
+      quote: t("home.testimonials.list.fifth.quote"),
+      author: t("home.testimonials.list.fifth.author"),
+      role: t("home.testimonials.list.fifth.role"),
       image: "/Testimonials/rekha.jpg",
     },
     {
-      quote: t("about.testimonials.list.sixth.quote"),
-      author: t("about.testimonials.list.sixth.author"),
-      role: t("about.testimonials.list.sixth.role"),
+      quote: t("home.testimonials.list.sixth.quote"),
+      author: t("home.testimonials.list.sixth.author"),
+      role: t("home.testimonials.list.sixth.role"),
       image: "/Testimonials/winnie.jpg",
     },
   ];
 
   const caseStudies = [
     {
-      title: t("about.impact.list.environmental.title"),
-      description: t("about.impact.list.environmental.description"),
-      impact: t("about.impact.list.environmental.impact"),
+      title: t("home.impact.list.environmental.title"),
+      description: t("home.impact.list.environmental.description"),
+      impact: t("home.impact.list.environmental.impact"),
       image:
         "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&fit=crop",
     },
     {
-      title: t("about.impact.list.peace.title"),
-      description: t("about.impact.list.peace.description"),
-      impact: t("about.impact.list.peace.impact"),
+      title: t("home.impact.list.peace.title"),
+      description: t("home.impact.list.peace.description"),
+      impact: t("home.impact.list.peace.impact"),
       image:
         "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&fit=crop",
     },
@@ -143,12 +143,12 @@ const About = () => {
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative">
-              {t("about.AboutUs.title")}
+              {t("home.AboutUs.title")}
               <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
 
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
-              {t("about.AboutUs.subtitle")
+              {t("home.AboutUs.subtitle")
                 .split("\n")
                 .map((line, index) => (
                   <span key={index}>
@@ -160,10 +160,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="py-0 bg-white left-[6px] relative">
+      <section className="py-0 bg-white">
         <div className="px-0 mx-auto w-full">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative mb-8 px-4 md:px-6 lg:px-8 mx-auto md:max-w-[57rem] w-full">
-            {t("about.gallery.title") || "Our Gallery"}
+            {t("home.gallery.title") || "Our Gallery"}
             <span className="absolute left-4 md:left-6 lg:left-8 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
           </h2>
           <Carousel />
@@ -175,11 +175,11 @@ const About = () => {
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative">
-              {t("about.Vision.title")}
+              {t("home.Vision.title")}
               <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
-              {t("about.Vision.subtitle")
+              {t("home.Vision.subtitle")
                 .split("\n")
                 .map((line, index) => (
                   <span key={index}>
@@ -196,11 +196,11 @@ const About = () => {
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative">
-              {t("about.mission.title")}
+              {t("home.mission.title")}
               <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <p className="md:max-w-[57rem] w-full mt-4 text-xl text-gray-500 lg:mx-auto text-justify text-lg">
-              {t("about.mission.subtitle")
+              {t("home.mission.subtitle")
                 .split("\n")
                 .map((line, index) => (
                   <span key={index}>
@@ -213,20 +213,20 @@ const About = () => {
 
           <div className="mt-16">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative pb-[2rem]">
-              {t("about.mission.impactStories.title")}
+              {t("home.mission.impactStories.title")}
               <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-[1.5rem]">
               <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
                 <img src={first_story} className="object-cover w-full h-48" />
                 <p className="mt-2 text-justify text-lg text-gray-600">
-                  {t("about.mission.impactStories.first.description")}
+                  {t("home.mission.impactStories.first.description")}
                 </p>
               </div>
               <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
                 <img src={second_story} className="object-cover w-full h-48" />
                 <p className="mt-2 text-justify text-lg text-gray-600">
-                  {t("about.mission.impactStories.second.description")}
+                  {t("home.mission.impactStories.second.description")}
                 </p>
               </div>
             </div>
@@ -238,7 +238,7 @@ const About = () => {
       <section className="py-16 pt-16 bg-white pt-8 pb-0  ">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <h2 className="mb-12 text-3xl font-extrabold text-center text-gray-900">
-            {t("about.testimonials.title")}
+            {t("home.testimonials.title")}
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {testimonials.map((testimonial, index) => (
@@ -268,10 +268,10 @@ const About = () => {
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              {t("about.social.title")}
+              {t("home.social.title")}
             </h2>
             <p className="md:max-w-[57rem] w-full mx-auto mt-4 text-xl text-gray-500">
-              {t("about.social.subtitle")}
+              {t("home.social.subtitle")}
             </p>
           </div>
 
@@ -279,7 +279,7 @@ const About = () => {
             {/* Instagram Feed */}
             <div className="space-y-6">
               <h3 className="mb-6 text-2xl font-bold text-gray-900">
-                {t("about.social.updates.title")}
+                {t("home.social.updates.title")}
               </h3>
               <div className="overflow-hidden rounded-lg shadow-lg instagram-feed-container">
                 <InstagramEmbed
@@ -294,10 +294,10 @@ const About = () => {
               {/* Share Section */}
               <div className="p-8 bg-white shadow-sm rounded-2xl">
                 <h3 className="text-2xl font-bold text-gray-900">
-                  {t("about.social.share.title")}
+                  {t("home.social.share.title")}
                 </h3>
                 <p className="mt-2 mb-6 text-gray-500">
-                  {t("about.social.share.subtitle")}
+                  {t("home.social.share.subtitle")}
                 </p>
                 <div className="flex items-center space-x-4">
                   <FacebookShareButton url={shareUrl} title={title}>
@@ -323,10 +323,10 @@ const About = () => {
               {/* Social Links */}
               <div className="p-8 bg-white shadow-sm rounded-2xl">
                 <h3 className="text-2xl font-bold text-gray-900">
-                  {t("about.social.follow.title")}
+                  {t("home.social.follow.title")}
                 </h3>
                 <p className="mt-2 mb-6 text-gray-500">
-                  {t("about.social.follow.subtitle")}
+                  {t("home.social.follow.subtitle")}
                 </p>
                 <div className="space-y-4">
                   <a
@@ -335,15 +335,15 @@ const About = () => {
                   >
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png"
-                      alt={t("about.social.follow.instagram.name")}
+                      alt={t("home.social.follow.instagram.name")}
                       className="w-8 h-8 mr-4"
                     />
                     <div>
                       <p className="font-medium text-gray-900">
-                        {t("about.social.follow.instagram.name")}
+                        {t("home.social.follow.instagram.name")}
                       </p>
                       <p className="text-sm text-gray-500">
-                        {t("about.social.follow.instagram.handle")}
+                        {t("home.social.follow.instagram.handle")}
                       </p>
                     </div>
                   </a>
@@ -353,15 +353,15 @@ const About = () => {
                   >
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/225px-X_icon.svg.png"
-                      alt={t("about.social.follow.twitter.name")}
+                      alt={t("home.social.follow.twitter.name")}
                       className="w-8 h-8 mr-4"
                     />
                     <div>
                       <p className="font-medium text-gray-900">
-                        {t("about.social.follow.twitter.name")}
+                        {t("home.social.follow.twitter.name")}
                       </p>
                       <p className="text-sm text-gray-500">
-                        {t("about.social.follow.twitter.handle")}
+                        {t("home.social.follow.twitter.handle")}
                       </p>
                     </div>
                   </a>
@@ -371,15 +371,15 @@ const About = () => {
                   >
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/108px-LinkedIn_icon.svg.png"
-                      alt={t("about.social.follow.linkedin.name")}
+                      alt={t("home.social.follow.linkedin.name")}
                       className="w-8 h-8 mr-4"
                     />
                     <div>
                       <p className="font-medium text-gray-900">
-                        {t("about.social.follow.linkedin.name")}
+                        {t("home.social.follow.linkedin.name")}
                       </p>
                       <p className="text-sm text-gray-500">
-                        {t("about.social.follow.linkedin.handle")}
+                        {t("home.social.follow.linkedin.handle")}
                       </p>
                     </div>
                   </a>
@@ -464,4 +464,4 @@ const Payment = ({
   );
 };
 
-export default About;
+export default Home;

@@ -32,7 +32,7 @@ const Navigation = () => {
   }, []);
 
   const mainMenuItems = [
-    { label: t("navigation.about"), href: "/" },
+    { label: t("navigation.home"), href: "/" },
     { label: t("navigation.events"), href: "/events" },
     { label: t("navigation.blueEconomy"), href: "/blueEconomy" },
     { label: t("navigation.diaspora"), href: "/diaspora" },

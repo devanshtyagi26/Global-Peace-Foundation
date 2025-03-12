@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import About from "./pages/About";
+import Home from "./pages/Home";
 import BlueEconomy from "./pages/BlueEconomy";
 import Events from "./pages/Events";
 import Resources from "./pages/Resources";
@@ -95,7 +95,7 @@ function App() {
           <Navigation />
           <main className="flex-grow">
             <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<About />} />
+              <Route path="/" element={<Home />} />
               <Route path="/events" element={<Events />} />
               <Route path="/blueEconomy" element={<BlueEconomy />} />
               <Route path="/diaspora" element={<Diaspora />} />
