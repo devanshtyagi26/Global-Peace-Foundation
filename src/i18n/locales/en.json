@@ -24,7 +24,10 @@
   "about": {
     "AboutUs": {
       "title": "About Us",
-      "subtitle": "Indo-Pacific Peace Forum provides a platform, where a group of organizations, institutions, stakeholders, and experts can exchange ideas and discuss issues, to promote peace and stability across the Indo-Pacific. The Indo-Pacific region is an expansive stretch from the eastern coast of Africa to the western shores of the Americas. The Indo-Pacific region is home to over 50% of the world's population and accounts for 60% of global GDP. The Indo-Pacific region faces complex security challenges, including territorial disputes, terrorism, cybersecurity threats, and great power rivalries. The Indo-Pacific is a critical hub for global trade and commerce, with many countries relying on sea routes for economic survival. The region's stability is crucial for global peace and prosperity. \n\n The Indo-Pacific region is home to diverse cultures, religions, and nations, making it an ideal testing ground for this philosophy. By embracing “The World is One Family Under God”, countries in the Indo-Pacific region can work together to build a more peaceful, prosperous, and harmonious community."
+      "subtitle": "Indo-Pacific Peace Forum provides a platform, where a group of organizations, institutions, stakeholders, and experts can exchange ideas and discuss issues, to promote peace and stability across the Indo-Pacific. The Indo-Pacific region is an expansive stretch from the eastern coast of Africa to the western shores of the Americas. The Indo-Pacific region is home to over 50% of the world's population and accounts for 60% of global GDP. The Indo-Pacific region faces complex security challenges, including territorial disputes, terrorism, cybersecurity threats, and great power rivalries. The Indo-Pacific is a critical hub for global trade and commerce, with many countries relying on sea routes for economic survival. The region's stability is crucial for global peace and prosperity. \n\n The Indo-Pacific region is home to diverse cultures, religions, and nations, making it an ideal testing ground for this philosophy. By embracing \"The World is One Family Under God\", countries in the Indo-Pacific region can work together to build a more peaceful, prosperous, and harmonious community."
+    },
+    "gallery": {
+      "title": "Our Gallery"
     },
     "Vision": {
       "title": "Vision",
@@ -48,22 +51,22 @@
       "title": "What Our Community Says",
       "list": {
         "first": {
-          "quote": "The Indo-Pacific region holds immense potential, and through mutual understanding and collaboration, we can unlock it. India must lead the way with diplomacy, development, and sustainable practices to ensure a peaceful future.",
+          "quote": "The Indo-Pacific region holds immense potential, and through mutual understanding and collaboration, we can unlock it. India must lead the way with diplomacy, development, and sustainable practices to ensure a peaceful future.",
           "author": "Dr. Markandey Rai",
           "role": "Chairman GPF India & President IPPF"
         },
         "second": {
-          "quote": "Leadership is key to fostering peace, and each of us has a role to play. Embracing Vasudhaiva Kutumbakam, we can mitigate conflict through education, cooperation, and dialogue to build a more peaceful future for the Indo-Pacific.",
+          "quote": "Leadership is key to fostering peace, and each of us has a role to play. Embracing Vasudhaiva Kutumbakam, we can mitigate conflict through education, cooperation, and dialogue to build a more peaceful future for the Indo-Pacific.",
           "author": "Prof Dr. Priyaranjan Trivedi",
           "role": "President Confederation of Indian Universities "
         },
         "third": {
-          "quote": "The Indo-Pacific will flourish if we embrace Vasudhaiva Kutumbakam and the shared traditions of Asian nations. Strengthening cross-cultural interaction, involving youth in new projects, and enhancing regional connectivity will pave the way for a more cooperative and prosperous future.",
+          "quote": "The Indo-Pacific will flourish if we embrace Vasudhaiva Kutumbakam and the shared traditions of Asian nations. Strengthening cross-cultural interaction, involving youth in new projects, and enhancing regional connectivity will pave the way for a more cooperative and prosperous future.",
           "author": "Ambassador Shashank",
           "role": "Former President ARSP"
         },
         "fourth": {
-          "quote": "India's leadership in SAGAR highlights the strategic importance of maritime boundaries in the Indo-Pacific. Through wisdom-based strategies, we continue to strengthen regional stability and cooperation.",
+          "quote": "India's leadership in SAGAR highlights the strategic importance of maritime boundaries in the Indo-Pacific. Through wisdom-based strategies, we continue to strengthen regional stability and cooperation.",
           "author": "Mr. Sanjay Bhalla",
           "role": "Vice President,  ARSP "
         },
@@ -73,7 +76,7 @@
           "role": ""
         },
         "sixth": {
-          "quote": "Strengthening infrastructure, security, technology, and partnerships between India and Kenya is key to regional growth. A reformed multilateral and financial system can better address emerging challenges in the Global South, benefiting Africa and Asia alike.",
+          "quote": "Strengthening infrastructure, security, technology, and partnerships between India and Kenya is key to regional growth. A reformed multilateral and financial system can better address emerging challenges in the Global South, benefiting Africa and Asia alike.",
           "author": "Winnie Mwanjala",
           "role": "Head of Chancery, Kenya"
         }
@@ -128,7 +131,7 @@
   },
   "blueEconomy": {
     "title": "Blue Economy",
-    "subtitle": "India Blue Economy refers to an economic paradigm that prioritizes the preservation and regeneration of the marine environment while simultaneously fostering sustainable human growth and development. \nBlue economy is the sustainable use of ocean resources for economic growth and improved livelihoods. The overall contribution of the ocean to the economies, the need to address environmental and ecological sustainability.\nThus, the ocean economy is a growth opportunity for both developed and developing countries. The blue economy is intrinsically linked to the sustainable development goal(SDGs)14 labelled as life below water which concerns the conservation and sustainable use of water resources. The UN has declared the decade 2021-2030 as the decade of “ocean science for sustainable development”.",
+    "subtitle": "India Blue Economy refers to an economic paradigm that prioritizes the preservation and regeneration of the marine environment while simultaneously fostering sustainable human growth and development. \nBlue economy is the sustainable use of ocean resources for economic growth and improved livelihoods. The overall contribution of the ocean to the economies, the need to address environmental and ecological sustainability.\nThus, the ocean economy is a growth opportunity for both developed and developing countries. The blue economy is intrinsically linked to the sustainable development goal(SDGs)14 labelled as life below water which concerns the conservation and sustainable use of water resources. The UN has declared the decade 2021-2030 as the decade of \"ocean science for sustainable development\".",
     "pillars": {
       "title": "Three pillars of the blue economy",
       "types": {

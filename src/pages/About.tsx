@@ -160,7 +160,15 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Carousel />
+      <section className="py-0 bg-white left-[6px] relative">
+        <div className="px-0 mx-auto w-full">
+          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative mb-8 px-4 md:px-6 lg:px-8 mx-auto md:max-w-[57rem] w-full">
+            {t("about.gallery.title") || "Our Gallery"}
+            <span className="absolute left-4 md:left-6 lg:left-8 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
+          </h2>
+          <Carousel />
+        </div>
+      </section>
       <SdgOutline />
       {/* Vision Section */}
       <section id="vision" className="py-16 pt-16 bg-white pt-8 pb-0  ">
