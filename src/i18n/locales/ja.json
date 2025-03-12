@@ -2,6 +2,8 @@
   "navigation": {
     "home": "ホーム",
     "events": "イベント",
+    "blueEconomy": "ブルーエコノミー",
+    "diaspora": "ディアスポラ",
     "resources": "リソース",
     "contact": "お問い合わせ",
     "More": "もっと",
@@ -12,6 +14,10 @@
     "youth": {
       "title": "青少年",
       "subtitle": "青少年プログラム"
+    },
+    "Peace": {
+      "title": "平和",
+      "subtitle": "平和活動"
     }
   },
   "hero": {
