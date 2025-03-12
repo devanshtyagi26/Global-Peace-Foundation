@@ -96,7 +96,7 @@ export const Carousel = () => {
       {/* Previous Button - Small and corner-attached on mobile */}
       <button
         onClick={prevSlide}
-        className="absolute left-[12px] md:left-4 top-1/2 md:-translate-y-1/2 top-[40%] md:top-4 z-20 bg-black/70 hover:bg-black/90 text-white w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-xl border-2 border-white/30"
+        className="absolute left-[12px] md:left-4 top-1/2 md:-translate-y-1/2 top-[40%] z-20 bg-black/70 hover:bg-black/90 text-white w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-xl border-2 border-white/30"
         aria-label="Previous slide"
       >
         <svg
