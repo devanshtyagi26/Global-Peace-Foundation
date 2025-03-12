@@ -163,7 +163,6 @@ const Home = () => {
       <section className="py-0 bg-white">
         <div className="px-0 mx-auto w-full">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-left text-[1.7rem] leading-[1.75rem] relative mb-8 px-4 md:px-6 lg:px-8 mx-auto md:max-w-[57rem] w-full">
-            {t("home.gallery.title") || "Our Gallery"}
             <span className="absolute left-4 md:left-6 lg:left-8 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
           </h2>
           <Carousel />
@@ -235,28 +234,90 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 pt-16 bg-white pt-8 pb-0  ">
+      <section className="py-16 pt-16 bg-white pt-8 pb-0">
         <div className="px-4 mx-auto md:max-w-[57rem] w-full sm:px-6 lg:px-8">
           <h2 className="mb-12 text-3xl font-extrabold text-center text-gray-900">
             {t("home.testimonials.title")}
           </h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="p-8 rounded-lg bg-gray-50">
-                <div className="flex items-center mb-6">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 mr-4 rounded-full"
-                  />
-                  <div>
-                    <h3 className="text-justify text-lg font-medium text-gray-900">
-                      {testimonial.author}
-                    </h3>
-                    <p className="text-gray-600">{testimonial.role}</p>
+
+          {/* Mobile horizontal scroller (hidden on md and above) */}
+          <div className="md:hidden -mx-4 px-4 pb-4 overflow-x-auto scrollbar-hide">
+            <div className="flex space-x-6 snap-x">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-[80vw] max-w-xs snap-center relative overflow-hidden rounded-xl shadow-xl h-[30rem] transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  style={{
+                    backgroundImage: `url(${testimonial.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  {/* Content container with semi-transparent background panel at the bottom */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm">
+                    <p className="mb-3 italic text-gray-800 line-clamp-3">
+                      "{testimonial.quote}"
+                    </p>
+
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 mr-4 overflow-hidden border-2 border-white rounded-full shadow-md">
+                        <img
+                          src={testimonial.image}
+                          alt={testimonial.author}
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-gray-900">
+                          {testimonial.author}
+                        </h3>
+                        <p className="text-gray-700 text-sm">
+                          {testimonial.role}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p className="italic text-gray-600">"{testimonial.quote}"</p>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop/tablet grid layout (hidden on small screens) */}
+          <div className="hidden md:grid grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="relative overflow-hidden rounded-xl shadow-xl h-[30rem] transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{
+                  backgroundImage: `url(${testimonial.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                {/* Content container with semi-transparent background panel at the bottom */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm">
+                  <p className="mb-3 italic text-gray-800 line-clamp-3">
+                    "{testimonial.quote}"
+                  </p>
+
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 mr-4 overflow-hidden border-2 border-white rounded-full shadow-md">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.author}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">
+                        {testimonial.author}
+                      </h3>
+                      <p className="text-gray-700 text-sm">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
