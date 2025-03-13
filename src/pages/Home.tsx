@@ -23,6 +23,7 @@ const Home = () => {
   const shareUrl = window.location.origin;
   const title = t("hero.title");
 
+  // extra
   const partners = [
     {
       name: t("home.partners.list.asean.name"),
