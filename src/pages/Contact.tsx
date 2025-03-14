@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Globe, AlertCircle } from 'lucide-react';
-import MessageEmail from "../emails/MessageEmail";
-import { renderToString } from "react-dom/server";
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, Send, Globe, AlertCircle } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -13,21 +11,25 @@ interface FormData {
 
 const Contact = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    organization: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    organization: "",
+    subject: "",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -36,25 +38,22 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Convert the React component to an HTML string
-      const emailHtml = renderToString(
-        <MessageEmail
-          name={formData.name}
-          email={formData.email}
-          organization={formData.organization}
-          subject={formData.subject}
-          body={formData.message}
-        />
-      );
-
-      // Send the email request
-      const response = await fetch("http://localhost:5000/send-email", {
+      // Use web3forms API for email handling
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
-          to: import.meta.env.VITE_RECEIVER_MAIL,
-          subject: "Message from GPF Website",
-          html: emailHtml,
+          access_key:
+            import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
+            "YOUR_WEB3FORMS_ACCESS_KEY",
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization,
+          subject: formData.subject,
+          message: formData.message,
+          from_name: "Global Peace Foundation Contact Form",
         }),
       });
 
@@ -87,7 +86,8 @@ const Contact = () => {
             Get in Touch
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions about our programs or interested in partnerships? We'd love to hear from you.
+            Have questions about our programs or interested in partnerships?
+            We'd love to hear from you.
           </p>
         </div>
 
@@ -95,8 +95,10 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-xl shadow-md p-6 animate-fade-slide-up">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h2>
-              
+              <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                Contact Information
+              </h2>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 group transition-all duration-300 hover:translate-x-2">
                   <div className="flex-shrink-0">
@@ -104,7 +106,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-medium text-gray-900">Email</h3>
-                    <p className="text-sm text-gray-600">info@indopacificyouth.org</p>
+                    <p className="text-sm text-gray-600">
+                      info@indopacificyouth.org
+                    </p>
                   </div>
                 </div>
 
@@ -123,8 +127,14 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-indigo-600" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-medium text-gray-900">Address</h3>
-                    <p className="text-sm text-gray-600">123 Pacific Plaza<br />Singapore 123456</p>
+                    <h3 className="text-sm font-medium text-gray-900">
+                      Address
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      123 Pacific Plaza
+                      <br />
+                      Singapore 123456
+                    </p>
                   </div>
                 </div>
 
@@ -133,8 +143,14 @@ const Contact = () => {
                     <Globe className="w-6 h-6 text-indigo-600" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-medium text-gray-900">Working Hours</h3>
-                    <p className="text-sm text-gray-600">Monday - Friday<br />9:00 AM - 6:00 PM (SGT)</p>
+                    <h3 className="text-sm font-medium text-gray-900">
+                      Working Hours
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Monday - Friday
+                      <br />
+                      9:00 AM - 6:00 PM (SGT)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -143,10 +159,17 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-md p-6 animate-fade-slide-up" style={{ animationDelay: '150ms' }}>
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white rounded-xl shadow-md p-6 animate-fade-slide-up"
+              style={{ animationDelay: "150ms" }}
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Full Name
                   </label>
                   <input
@@ -162,7 +185,10 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Email Address
                   </label>
                   <input
@@ -178,7 +204,10 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="organization" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="organization"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Organization
                   </label>
                   <input
@@ -193,7 +222,10 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Subject
                   </label>
                   <input
@@ -210,7 +242,10 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2 mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Message
                 </label>
                 <textarea
@@ -226,19 +261,27 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center justify-between">
-                {submitStatus !== 'idle' && (
-                  <div className={`flex items-center space-x-2 ${
-                    submitStatus === 'success' ? 'text-green-600' : 'text-red-600'
-                  }`}>
-                    {submitStatus === 'success' ? (
+                {submitStatus !== "idle" && (
+                  <div
+                    className={`flex items-center space-x-2 ${
+                      submitStatus === "success"
+                        ? "text-green-600"
+                        : "text-red-600"
+                    }`}
+                  >
+                    {submitStatus === "success" ? (
                       <>
                         <Send className="w-5 h-5" />
-                        <span className="text-sm">Message sent successfully!</span>
+                        <span className="text-sm">
+                          Message sent successfully!
+                        </span>
                       </>
                     ) : (
                       <>
                         <AlertCircle className="w-5 h-5" />
-                        <span className="text-sm">Error sending message. Please try again.</span>
+                        <span className="text-sm">
+                          Error sending message. Please try again.
+                        </span>
                       </>
                     )}
                   </div>
@@ -248,14 +291,30 @@ const Contact = () => {
                   type="submit"
                   disabled={isSubmitting}
                   className={`inline-flex items-center px-6 py-3 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 transform hover:scale-105 ${
-                    isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
+                    isSubmitting ? "opacity-75 cursor-not-allowed" : ""
                   }`}
                 >
                   {isSubmitting ? (
                     <>
-                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      <svg
+                        className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
                       </svg>
                       Sending...
                     </>
