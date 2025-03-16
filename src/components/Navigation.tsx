@@ -49,16 +49,6 @@ const Navigation = () => {
       href: "/diaspora",
       description: t("diaspora.title"),
     },
-    {
-      label: t("navigation.blog.title"),
-      href: "/blog",
-      description: t("navigation.blog.subtitle"),
-    },
-    {
-      label: t("navigation.Peace.title"),
-      href: "/Peace",
-      description: t("navigation.Peace.subtitle"),
-    },
   ];
 
   const isActive = (href: string) => location.pathname === href;

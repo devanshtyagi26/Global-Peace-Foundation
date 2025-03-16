@@ -100,8 +100,8 @@ const Resources = () => {
             Resources
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Access our collection of reports, books, and guides to support your
-            engagement in the Indo-Pacific youth community.
+            Explore our documentation with access to our reports, books, and
+            articles.
           </p>
         </div>
 
@@ -163,7 +163,9 @@ const Resources = () => {
         </div>
 
         <div
-          className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 transition-opacity duration-300 ${isLoading ? "opacity-50" : "opacity-100"}`}
+          className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 transition-opacity duration-300 ${
+            isLoading ? "opacity-50" : "opacity-100"
+          }`}
         >
           {filteredResources.map((resource, index) => (
             <div
@@ -178,8 +180,8 @@ const Resources = () => {
                       resource.type === "report"
                         ? "bg-blue-100 text-blue-800"
                         : resource.type === "book"
-                          ? "bg-purple-100 text-purple-800"
-                          : "bg-green-100 text-green-800"
+                        ? "bg-purple-100 text-purple-800"
+                        : "bg-green-100 text-green-800"
                     }`}
                   >
                     {getIcon(resource.type)}

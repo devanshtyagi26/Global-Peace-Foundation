@@ -6,19 +6,7 @@
     "diaspora": "Diaspora",
     "resources": "Resources",
     "contact": "Contact",
-    "More": "More",
-    "blog": {
-      "title": "Blog",
-      "subtitle": "News"
-    },
-    "youth": {
-      "title": "Youth",
-      "subtitle": "Youth Programs"
-    },
-    "Peace": {
-      "title": "Peace",
-      "subtitle": "Peace Initiatives"
-    }
+    "More": "More"
   },
   "hero": {
     "joinButton": "Donate Now",
@@ -76,7 +64,7 @@
         },
         "fifth": {
           "quote": "This forum can empower rural India and women by fostering inclusive dialogue, enhancing skill development, and creating opportunities for their active participation in regional growth and sustainability.",
-          "author": "Ms. Rekha Udit",
+          "author": "Mrs. Rekha Udit",
           "role": "Chairman, Women International Network"
         },
         "sixth": {
@@ -114,7 +102,7 @@
   },
   "events": {
     "title": "Events & Programs",
-    "subtitle": "Join our transformative events designed to empower youth across the Indo-Pacific region",
+    "subtitle": "Join our transformative events designed to empower people across the Indo-Pacific Region.",
     "filters": {
       "all": "All Events",
       "upcoming": "Upcoming Events",

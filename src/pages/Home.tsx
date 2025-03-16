@@ -121,7 +121,7 @@ const Home = () => {
           <SdgOutline />
         </div>
         <div className="relative px-4 py-24 mx-auto md:max-w-[57rem] w-full sm:py-32 sm:px-6 lg:px-8 sm:pt-[13rem] sm:pb-[2rem] max-md:pt-[0.1rem] max-md:pb-16">
-          <div className="flex mt-10 space-x-4 relative max-md:-bottom-12">
+          <div className="flex mt-10 space-x-4 relative max-md:-bottom-12 md:left-[-18.5rem] md:bottom-[-1rem] max-sm:bottom-[-3.5rem] max-sm:scale-80 max-sm:right-[0.3rem]">
             <button
               onClick={() => setqr(true)}
               className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#7cbac9] border border-transparent rounded-md max-md:text-[0.7rem] max-md:px-2 max-md:pt-0 max-md:pb-0 max-md:leading-[1.5rem] hover:bg-[#ABCFD8]"
@@ -217,17 +217,21 @@ const Home = () => {
               <span className="absolute left-0 w-[14%] border-t-4 border-[#009edb] mt-[2.7rem]"></span>
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-[1.5rem]">
-              <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
+              <div className="p-6 rounded-lg w-[28rem] sm:w-[22rem] bg-[#e8f5f9] h-[28rem]">
                 <img src={first_story} className="object-cover w-full h-48" />
-                <p className="mt-2 text-justify text-lg text-gray-600">
-                  {t("home.mission.impactStories.first.description")}
-                </p>
+                <div className="h-[calc(100%-12rem)] overflow-auto">
+                  <p className="mt-2 text-justify text-lg text-gray-600">
+                    {t("home.mission.impactStories.first.description")}
+                  </p>
+                </div>
               </div>
-              <div className="p-6 rounded-lg  w-[28rem] sm:w-[22rem] bg-[#e8f5f9]">
+              <div className="p-6 rounded-lg w-[28rem] sm:w-[22rem] bg-[#e8f5f9] h-[28rem]">
                 <img src={second_story} className="object-cover w-full h-48" />
-                <p className="mt-2 text-justify text-lg text-gray-600">
-                  {t("home.mission.impactStories.second.description")}
-                </p>
+                <div className="h-[calc(100%-12rem)] overflow-auto">
+                  <p className="mt-2 text-justify text-lg text-gray-600">
+                    {t("home.mission.impactStories.second.description")}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -255,26 +259,28 @@ const Home = () => {
                   }}
                 >
                   {/* Content container with semi-transparent background panel at the bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm">
-                    <p className="mb-3 italic text-gray-800 line-clamp-3">
-                      "{testimonial.quote}"
-                    </p>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm h-[35%] md:h-[40%]">
+                    <div className="flex flex-col justify-between h-full">
+                      <p className="italic text-gray-800 text-[clamp(0.7rem,3vw,0.9rem)] leading-tight overflow-hidden">
+                        "{testimonial.quote}"
+                      </p>
 
-                    <div className="flex items-center">
-                      <div className="w-12 h-12 mr-4 overflow-hidden border-2 border-white rounded-full shadow-md">
-                        <img
-                          src={testimonial.image}
-                          alt={testimonial.author}
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-gray-900">
-                          {testimonial.author}
-                        </h3>
-                        <p className="text-gray-700 text-sm">
-                          {testimonial.role}
-                        </p>
+                      <div className="flex items-center mt-3">
+                        <div className="w-10 h-10 mr-3 overflow-hidden border-2 border-white rounded-full shadow-md">
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.author}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900 text-sm">
+                            {testimonial.author}
+                          </h3>
+                          <p className="text-gray-700 text-xs">
+                            {testimonial.role}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -296,26 +302,28 @@ const Home = () => {
                 }}
               >
                 {/* Content container with semi-transparent background panel at the bottom */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm">
-                  <p className="mb-3 italic text-gray-800 line-clamp-3">
-                    "{testimonial.quote}"
-                  </p>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm h-[40%]">
+                  <div className="flex flex-col justify-between h-full">
+                    <p className="italic text-gray-800 text-[clamp(0.75rem,1.5vw,0.95rem)] leading-tight overflow-hidden">
+                      "{testimonial.quote}"
+                    </p>
 
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 mr-4 overflow-hidden border-2 border-white rounded-full shadow-md">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.author}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">
-                        {testimonial.author}
-                      </h3>
-                      <p className="text-gray-700 text-sm">
-                        {testimonial.role}
-                      </p>
+                    <div className="flex items-center mt-3">
+                      <div className="w-10 h-10 mr-3 overflow-hidden border-2 border-white rounded-full shadow-md">
+                        <img
+                          src={testimonial.image}
+                          alt={testimonial.author}
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 text-sm">
+                          {testimonial.author}
+                        </h3>
+                        <p className="text-gray-700 text-xs">
+                          {testimonial.role}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -96,7 +96,6 @@ const Footer = () => {
                 { name: "Blue Economy", path: "/blueEconomy" },
                 { name: "Diaspora", path: "/diaspora" },
                 { name: "Resources", path: "/resources" },
-                { name: "Blog", path: "/blog" },
                 { name: "Contact Us", path: "/contact" },
               ].map((item, index) => (
                 <li key={index}>
