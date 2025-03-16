@@ -106,11 +106,11 @@ const Events = () => {
                   alt={event.title}
                   className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
                 />
-                {event.type === "upcoming" && event.spotsLeft > 0 && (
+                {/* {event.type === "upcoming" && event.spotsLeft > 0 && (
                   <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium transform transition-transform duration-300 hover:scale-105">
                     {event.spotsLeft} {t("events.spotsLeft")}
                   </div>
-                )}
+                )} */}
                 {event.type === "past" && (
                   <div className="absolute top-4 right-4 bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {t("events.pastEvent")}
