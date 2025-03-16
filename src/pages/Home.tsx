@@ -302,7 +302,7 @@ const Home = () => {
                 }}
               >
                 {/* Content container with semi-transparent background panel at the bottom */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm h-[40%]">
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/70 backdrop-blur-sm h-[41%]">
                   <div className="flex flex-col justify-between h-full">
                     <p className="italic text-gray-800 text-[clamp(0.75rem,1.5vw,0.95rem)] leading-tight overflow-hidden">
                       "{testimonial.quote}"
