@@ -52,29 +52,29 @@ const Footer = () => {
               challenges.
             </p>
             <div className="flex space-x-4">
-              <a
+{/*               <a
                 href="https://facebook.com"
                 className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
+              </a> */}
               <a
-                href="https://twitter.com"
+                href="https://x.com/ippf_gpfindia?s=09"
                 className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/ippf_gpfindia?igsh=OW45a2VqcGtneDZu"
                 className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/indo-pacific-peace-forum/"
                 className="text-gray-300 transition-colors duration-300 transform hover:text-white hover:scale-110"
                 aria-label="LinkedIn"
               >
