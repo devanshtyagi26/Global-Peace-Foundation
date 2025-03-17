@@ -126,7 +126,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3 group">
                 <Phone className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
-                  +1 (123) 456-7890
+                  +91 85958 41086
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
