@@ -131,9 +131,9 @@ const Contact = () => {
                       Address
                     </h3>
                     <p className="text-sm text-gray-600">
-                      123 Pacific Plaza
+                      Paryavaran Complex, Sainik Farm,
                       <br />
-                      Singapore 123456
+                      New Delhi, Delhi - 110030
                     </p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ const Contact = () => {
                     <p className="text-sm text-gray-600">
                       Monday - Friday
                       <br />
-                      9:00 AM - 6:00 PM (SGT)
+                      9:00 AM - 5:00 PM (IST)
                     </p>
                   </div>
                 </div>
