@@ -34,7 +34,7 @@ const RESOURCES = [
   },
   {
     id: 3,
-    title: "Launc of Indo-Pacific Peace Forum at ARSP, New Delhi",
+    title: "Launch of Indo-Pacific Peace Forum at ARSP, New Delhi",
     type: "article",
     date: "2024-03",
     description:
