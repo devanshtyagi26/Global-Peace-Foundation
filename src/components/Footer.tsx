@@ -138,7 +138,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3 group">
                 <Globe className="w-5 h-5 text-[#678cb8] transition-colors duration-300 group-hover:text-indigo-300" />
                 <span className="text-gray-300 transition-colors duration-300 group-hover:text-white">
-                  www.ipyf.org
+                  www.indopacificpeaceforum.org
                 </span>
               </li>
             </ul>
