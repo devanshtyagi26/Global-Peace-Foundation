@@ -167,5 +167,128 @@
         "subtitle": "Cultural events such as the Filipino Pintados Festival and Chinese New Year celebrations in countries like Australia, the U.S., and Thailand serve as platforms for cultural exchange, strengthening bilateral relations, and promoting peace. These events enhance soft power, cooperation, and mutual respect between nations.\n\nCommunities across the Indo-Pacific region significantly contribute to fostering cultural exchange,understanding, and cooperation. The Indo-Pacific Peace Forum can play a pivotal role in amplifying these efforts by offering a platform for dialogue, cultural diplomacy, and collaborative initiatives. By engaging with diverse communities through educational programs and diplomatic discussions, the forum can promote peaceful coexistence, strengthen regional ties, and contribute to long-term stability, cooperation, and peace in the Indo-Pacific region."
       }
     }
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Access valuable resources and information to support your journey in promoting peace and development in the Indo-Pacific region.",
+    "categories": {
+      "publications": {
+        "title": "Publications",
+        "description": "Explore our collection of research papers, reports, and policy briefs on Indo-Pacific affairs.",
+        "list": {
+          "first": {
+            "title": "Indo-Pacific Security Framework",
+            "description": "A comprehensive analysis of security challenges and opportunities in the region.",
+            "download": "Download PDF"
+          },
+          "second": {
+            "title": "Cultural Exchange Programs",
+            "description": "Guidelines and best practices for implementing cultural exchange initiatives.",
+            "download": "Download PDF"
+          }
+        }
+      },
+      "toolkits": {
+        "title": "Toolkits",
+        "description": "Practical resources and guides for implementing peace-building initiatives.",
+        "list": {
+          "first": {
+            "title": "Youth Leadership Development",
+            "description": "A practical guide for developing youth leadership skills in the Indo-Pacific context.",
+            "download": "Download Toolkit"
+          },
+          "second": {
+            "title": "Community Engagement",
+            "description": "Tools and strategies for effective community engagement in peace-building.",
+            "download": "Download Toolkit"
+          }
+        }
+      },
+      "multimedia": {
+        "title": "Multimedia",
+        "description": "Access videos, podcasts, and other multimedia content related to our initiatives.",
+        "list": {
+          "first": {
+            "title": "Peace Forum Highlights",
+            "description": "Watch highlights from our recent peace forum events and discussions.",
+            "watch": "Watch Now"
+          },
+          "second": {
+            "title": "Youth Stories",
+            "description": "Listen to inspiring stories from young leaders across the Indo-Pacific.",
+            "listen": "Listen Now"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us to learn more about our initiatives or to explore collaboration opportunities.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "organization": "Organization",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you for your message. We will get back to you soon.",
+      "error": "There was an error sending your message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "content": "123 Peace Street, New Delhi, India 110001"
+      },
+      "email": {
+        "title": "Email",
+        "content": "info@indo-pacific-peace.org"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+91 123 456 7890"
+      }
+    },
+    "social": {
+      "title": "Connect With Us",
+      "description": "Follow us on social media to stay updated with our latest initiatives and events."
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "About Us",
+      "description": "The Indo-Pacific Youth Forum is a platform that empowers young minds to connect, collaborate, and create solutions for a better tomorrow. We focus on leadership, innovation, and global challenges."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": {
+        "about": "About Us",
+        "events": "Events",
+        "blueEconomy": "Blue Economy",
+        "diaspora": "Diaspora",
+        "resources": "Resources",
+        "contact": "Contact Us"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "email": "indopacificpeaceforum@gmail.com",
+      "phone": "+1 (123) 456-7890",
+      "address": "Paryavaran Complex, Sainik Farm, New Delhi, Delhi - 110030",
+      "website": "www.ipyf.org"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Stay updated with the latest events, resources, and opportunities. Subscribe to our newsletter.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe"
+    },
+    "bottom": {
+      "copyright": "© {year} Indo-Pacific Youth Forum. All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "termsConditions": "Terms & Conditions",
+      "madeWith": "Made with"
+    }
   }
 }
