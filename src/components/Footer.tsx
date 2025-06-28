@@ -41,7 +41,7 @@ const Footer = () => {
 
       {/* Main footer content */}
       <div className="px-4 pt-16 pb-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 mb-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,0.5fr)_minmax(0,1fr)_minmax(0,0.8fr)] gap-[3rem]">
           {/* About Section */}
           <div className="space-y-4 animate-fade-slide-up">
             <h3 className="text-xl font-bold">{t("footer.about.title")}</h3>
